@@ -40,7 +40,7 @@
     <div class="section-overlay"></div>
     <div class="content-container">
         <div class="info">
-            <h2>Kelurahan Way Urang</h2>
+            <h2>Kelurahan Way Urangs</h2>
             <p>Website resmi Kelurahan Way Urang sebagai pusat informasi dan pelayanan masyarakat.</p>
         </div>
         <div class="map">
@@ -63,14 +63,6 @@
     <h2>Tentang Kami</h2>
     <p>Website resmi Kelurahan Way Urang sebagai pusat informasi dan pelayanan masyarakat.</p>
 </section>
-
-
-
-
-
-
-
-
 
 <script>
     const navbar = document.querySelector('.navbar');

@@ -64,7 +64,7 @@ body {
 /* ================= SECTION ================= */
 #section-1 {
     position: relative;
-    background: url('../image/section-1.jpg') center/cover no-repeat;
+    background: black center/cover no-repeat;
 }
 
 #section-1::before,
