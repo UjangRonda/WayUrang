@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelurahan Contoh</title>
-    <link rel="stylesheet" href="style/cok.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -157,12 +157,11 @@
                     </div>
                 </div>
 
-                <div class="footer-column">
-                    <h3>Publikasi</h3>
-                    <ul>
-                        <li><a href="#">Kegiatan KMP</a></li>
-                    </ul>
+                <div class="footer-column logo-column">
+                <div class="logo-lampung">
+                    <img src="image/logo.png">
                 </div>
+             </div>
             </div>
 
             <div class="footer-bottom">
