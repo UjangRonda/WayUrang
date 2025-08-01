@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelurahan Contoh</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/visiMisi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -172,80 +172,6 @@
             </div>
         </footer>
     </section>
-
-    <script>
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const genderCtx = document.getElementById('genderChart').getContext('2d');
-  new Chart(genderCtx, {
-    type: 'doughnut',
-    data: {
-      labels: ['Perempuan', 'Laki-laki'],
-      datasets: [{
-        data: [4200, 4320],
-        backgroundColor: ['#ff4d6d', '#4d79ff'],
-      }]
-    },
-    options: {
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: { color: '#fff' }
-        }
-      }
-    }
-  });
-
-  const jobCtx = document.getElementById('jobChart').getContext('2d');
-  new Chart(jobCtx, {
-    type: 'bar',
-    data: {
-      labels: [
-        'Karyawan (PNS, TNI, Swasta)', 'Wiraswasta / Pedagang', 'Petani', 'Buruh Tani',
-        'Peternak', 'Jasa', 'Pensiunan', 'Lainnya', 'Pengangguran', 'Pelajar'
-      ],
-      datasets: [{
-        label: 'Jumlah',
-        data: [1776, 1808, 497, 108, 159, 208, 285, 402, 100, 9501],
-        backgroundColor: '#4bc0c0',
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      scales: {
-        x: {
-          ticks: { color: '#fff' },
-          grid: { color: '#444' }
-        },
-        y: {
-          ticks: { color: '#fff' },
-          grid: { color: '#444' }
-        }
-      },
-      plugins: {
-        legend: {
-          display: false
-        },
-        tooltip: {
-          backgroundColor: '#333',
-          titleColor: '#ffcc00',
-          bodyColor: '#fff'
-        }
-      }
-    }
-  });
-</script>
-
 </body>
 
 </html>

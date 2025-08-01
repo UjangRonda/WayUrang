@@ -1,4 +1,4 @@
-/* ================= GLOBAL STYLE CSS================= */
+/* ================= GLOBAL ================= */
 html {
     scroll-behavior: smooth;
     /* smooth scroll antar section */
@@ -734,3 +734,4 @@ nav a:hover {
 .footer.animate .footer-column {
   animation-play-state: running;
 }
+  

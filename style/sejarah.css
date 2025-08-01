@@ -83,7 +83,9 @@ body {
 .dropdown-menu a {
   display: block;
   padding-bottom: 20px;
-  padding-top: 20px; 
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px; 
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
 }
