@@ -444,15 +444,22 @@ body {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
+.logo-lampung img{
+    width: 200px;
+}
+
 .footer-column ul li a:hover::before {
   color: #f59e0b;
   transform: scale(1.2);
 }
 
-.social-link-instagram {
-    padding: 20px;
+.social-media {
+    width: 160px;
+    display: grid;
+    grid-auto-flow: column; /* Ubah arah grid jadi horizontal */
+    gap: 0px;
+    
 }
-
 .map-container {
   margin-bottom: 20px;
 }
