@@ -202,7 +202,7 @@
 
         .card-image img {
           width: 100%;
-          height: 100%;
+          height: 120%;
           object-fit: cover;
           transition: transform 0.3s ease;
         }
@@ -212,7 +212,7 @@
         }
 
         .card-content {
-          padding: 25px;
+          padding: 2px 25px 25px 25px;
         }
 
         .card-title {
@@ -437,7 +437,7 @@
                 <!-- Card 2 -->
                 <a href="detail-publikasi-2.html" class="publikasi-card">
                     <div class="card-image">
-                        <img src="../image/publikasi-2.jpg" alt="Judul Publikasi 2">
+                        <img src="../image/senaya.jpeg" alt="Judul Publikasi 2">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Pantai Senaya</h3>
