@@ -22,17 +22,15 @@
                 <div class="dropdown">
                     <a href="#tentang">Tentang ▾</a>
                     <div class="dropdown-menu">
-                        <a href="sejarah.html">Sejarah</a>
-                        <a href="visiMisi.html">Visi Misi</a>
-                        <a href="strukturOrganisasi.html">Struktur Organisasi</a>
+                        <a href="sejarah.php">Sejarah</a>
+                        <a href="visiMisi.php">Visi Misi</a>
+                        <a href="strukturOrganisasi.php">Struktur Organisasi</a>
                     </div>
                 </div>
-                <a href="#layanan">Publikasi</a>
-                <a href="#layanan">Potensi Wisata</a>
+                <a href="../tempat wisata/potensiWisata.php">Potensi Wisata</a>
                 <a href="#kontak">Kontak</a>
             </nav>
-        </div>
-    </header>
+</header>
 
     <section class="hero-section">
         <div class="hero-content">
@@ -197,3 +195,15 @@
                     <img src="../image/logo.png">
                 </div>
              </div>
+                    </body>
+                        <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</html>

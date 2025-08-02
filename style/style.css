@@ -309,16 +309,6 @@ body {
   margin-right: 8px;
 }
 
-.navbar nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.navbar nav a:hover {
-    color: #ffcc00;
-}
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
@@ -394,6 +384,8 @@ nav a {
     padding: 0 20px;
     color: #fff;
     margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
 }
