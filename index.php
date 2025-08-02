@@ -35,8 +35,7 @@
                         <a href="tentang/strukturOrganisasi.php">Struktur Organisasi</a>
                     </div>
                 </div>
-                <a href="#layanan">Publikasi</a>
-                <a href="#layanan">Potensi Wisata</a>
+                <a href="tempat wisata/potensiWisata.php">Potensi Wisata</a>
                 <a href="#kontak">Kontak</a>
             </nav>
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Struktur Organisasi - Kelurahan Way Urang</title>
+    <title>Potensi Wisata - Kelurahan Way Urang</title>
     <style>
         /* ================= GLOBAL ================= */
         html {
@@ -102,7 +102,7 @@
         .hero-section {
           height: 60vh;
           background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23333" width="1200" height="600"/><path fill="%23ff6b35" opacity="0.1" d="M0,300 Q300,100 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>')
+            url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23333" width="1200" height="600"/><path fill="%2300b4d8" opacity="0.1" d="M0,300 Q300,100 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>')
               center/cover;
           display: flex;
           align-items: center;
@@ -115,7 +115,7 @@
         .hero-content h1 {
           font-size: 3.5em;
           margin: 0;
-          color: #ff6b35;
+          color: #00b4d8;
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
@@ -133,7 +133,7 @@
         }
 
         .breadcrumb a {
-          color: #ff6b35;
+          color: #00b4d8;
           text-decoration: none;
           transition: color 0.3s;
         }
@@ -153,48 +153,91 @@
 
         .content-section {
           margin-bottom: 60px;
+        }
+
+        .content-section h2 {
+          color: #00b4d8;
+          font-size: 2.2em;
+          margin-bottom: 40px;
+          text-align: center;
+          border-bottom: 3px solid #00b4d8;
+          padding-bottom: 10px;
+          display: inline-block;
+          width: 100%;
+        }
+
+        /* ================= PUBLIKASI GRID ================= */
+        .publikasi-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+          margin-top: 40px;
+        }
+
+        .publikasi-card {
           background: rgba(34, 34, 34, 0.8);
-          padding: 40px;
           border-radius: 15px;
           backdrop-filter: blur(10px);
           border: 1px solid rgba(255, 255, 255, 0.1);
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-          transition: transform 0.3s ease;
+          overflow: hidden;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          text-decoration: none;
+          color: inherit;
         }
 
-        .content-section:hover {
-          transform: translateY(-5px);
+        .publikasi-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 40px rgba(0, 180, 216, 0.2);
+          border-color: rgba(0, 180, 216, 0.3);
         }
 
-        .content-section h2 {
-          color: #ff6b35;
-          font-size: 2.2em;
-          margin-bottom: 25px;
-          border-bottom: 3px solid #ff6b35;
-          padding-bottom: 10px;
-          display: inline-block;
-          text-align: center;
+        .card-image {
           width: 100%;
+          height: 200px;
+          overflow: hidden;
+          position: relative;
         }
 
-        /* IMAGE CONTAINER */
-        .org-image-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 40px 0;
-        }
-
-        .org-image {
-          max-width: 100%;
-          height: auto;
-          border-radius: 15px;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        .card-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
           transition: transform 0.3s ease;
         }
 
-        .org-image:hover {
-          transform: scale(1.02);
+        .publikasi-card:hover .card-image img {
+          transform: scale(1.05);
+        }
+
+        .card-content {
+          padding: 25px;
+        }
+
+        .card-title {
+          font-size: 1.4em;
+          font-weight: 600;
+          color: #00b4d8;
+          margin-bottom: 15px;
+          line-height: 1.3;
+        }
+
+        .card-description {
+          color: #e0e0e0;
+          line-height: 1.6;
+          padding-bottom: 20px;
+          font-size: 1em;
+          margin: 0;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+
+        }
+
+        .read-more {
+          color: #00b4d8;
+          font-weight: 500;
         }
 
         /* ================= FOOTER ================= */
@@ -314,16 +357,17 @@
             padding: 40px 20px;
           }
 
-          .content-section {
-            padding: 25px;
+          .publikasi-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
           }
 
-          .org-image-container {
-            margin: 20px 0;
+          .card-image {
+            height: 180px;
           }
 
-          .org-image {
-            border-radius: 10px;
+          .card-content {
+            padding: 20px;
           }
 
           .navbar nav {
@@ -358,7 +402,6 @@
                         <a href="strukturOrganisasi.html">Struktur Organisasi</a>
                     </div>
                 </div>
-                <a href="#layanan">Publikasi</a>
                 <a href="#layanan">Potensi Wisata</a>
                 <a href="#kontak">Kontak</a>
             </nav>
@@ -367,20 +410,120 @@
 
     <section class="hero-section">
         <div class="hero-content">
-            <h1>Struktur Organisasi</h1>
-            <p>Susunan Organisasi Kelurahan Way Urang</p>
+            <h1>Potensi Wisata</h1>
+            <p>Menelusuri pesona alam dan budaya yang menjanjikan di Kelurahan Way Urang</p>
             <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <a href="#">Tentang</a> / <span>Struktur Organisasi</span>
+                <a href="../index.html">Beranda</a> / <span>Potensi Wisata</span>
             </div>
         </div>
     </section>
 
     <main class="main-content">
         <div class="content-section">
-            <h2>Struktur Organisasi Kelurahan Way Urang</h2>
-            
-            <div class="org-image-container">
-                <img src="../image/struktur.png" alt="Struktur Organisasi Kelurahan Way Urang" class="org-image">
+            <div class="publikasi-grid">
+                <!-- Card 1 -->
+                <a href="detail-publikasi-1.html" class="publikasi-card">
+                    <div class="card-image">
+                        <img src="../image/publikasi-1.jpg" alt="Judul Publikasi 1">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pantai Sanggar</h3>
+                        <p class="card-description">
+                            Pantai Sanggar menyuguhkan pasir putih, air jernih, dan nuansa tropis ala Bali dengan spot foto yang estetik. Dilengkapi fasilitas seperti kafe, gazebo, dan area camping yang cocok untuk liburan keluarga atau teman.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="detail-publikasi-2.html" class="publikasi-card">
+                    <div class="card-image">
+                        <img src="../image/publikasi-2.jpg" alt="Judul Publikasi 2">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pantai Senaya</h3>
+                        <p class="card-description">
+                             Pantai Senaya menawarkan hamparan pasir putih, panorama Gunung Rajabasa, dan spot sunset yang menawan. Dengan tiket masuk terjangkau, pengunjung bebas menikmati berbagai fasilitas seperti gazebo, bean bag, dan area bermain anak.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="detail-publikasi-3.html" class="publikasi-card">
+                    <div class="card-image">
+                        <img src="../image/publikasi-3.jpg" alt="Judul Publikasi 3">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pantai Alau-alau</h3>
+                        <p class="card-description">
+                            Pantai Alau-Alau adalah destinasi wisata dengan pasir putih bersih dan ombak tenang. Dikelilingi pepohonan rindang dan batu karang, pantai ini cocok untuk bersantai, bermain air, atau menikmati matahari terbenam.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="detail-publikasi-4.html" class="publikasi-card">
+                    <div class="card-image">
+                        <img src="../image/publikasi-4.jpg" alt="Judul Publikasi 4">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pantai Kedu</h3>
+                        <p class="card-description">
+                            Pantai Kedu menawarkan pengalaman wisata yang seru dengan sensasi sunset spektakuler, suasana asri yang cocok untuk keluarga maupun milenial, serta fasilitas lengkap mulai dari camping hingga hiburan.
+                        </p>  
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="detail-publikasi-5.html" class="publikasi-card">
+                    <div class="card-image">
+                        <img src="../image/publikasi-5.jpg" alt="Judul Publikasi 5">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pantai Kedu Warna</h3>
+                        <p class="card-description">
+                            Pantai Kedu Warna terkenal dengan keindahan malamnya yang dihiasi lampu-lampu warna-warni. Pantai ini sering menjadi tempat favorit untuk camping, bersantai, dan menikmati suasana laut yang tenang dengan pemandangan cahaya yang memikat.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="detail-publikasi-6.html" class="publikasi-card">
+                    <div class="card-image">
+                        <img src="../image/publikasi-6.jpg" alt="Judul Publikasi 6">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pantai Aurora  </h3>
+                        <p class="card-description">
+                            Pantai Aurora menawarkan pemandangan alam yang memikat. Salah satu daya tarik utamanya adalah café di area pantai yang menyediakan fasilitas karaoke, cocok untuk bersantai dan menikmati waktu bersama teman atau keluarga.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="detail-publikasi-6.html" class="publikasi-card">
+                    <div class="card-image">
+                        <img src="../image/publikasi-6.jpg" alt="Judul Publikasi 6">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pantai Benteng </h3>
+                        <p class="card-description">
+                            Pantai ini menghadirkan suasana santai di tepi laut, dilengkapi area food station atau café (Benteng Food Station) yang instagramable. Spot benteng sebagai pintu masuk kerap jadi latar keren untuk berfoto, terutama saat sunset.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="detail-publikasi-6.html" class="publikasi-card">
+                    <div class="card-image">
+                        <img src="../image/publikasi-6.jpg" alt="Judul Publikasi 6">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pantai Kalianda </h3>
+                        <p class="card-description">
+                            Pantai ini menawarkan pemandangan laut yang tenang dengan latar belakang Gunung Rajabasa, pasir putih kecokelatan, dan suasana yang cocok untuk bersantai. Lokasinya sering jadi tempat favorit untuk menikmati matahari terbenam.
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
