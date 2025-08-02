@@ -470,34 +470,34 @@ nav a:hover {
 .footer-container {
 
 
-        max-width: 1200px;
+    max-width: 1200px;
 
 
-        margin: 0 auto;
+    margin: 0 auto;
 
 
-        display: flex;
+    display: flex;
 
 
-        justify-content: space-between;
+    justify-content: space-between;
 
 
-        align-items: flex-start;
+    align-items: flex-start;
 
 
-        gap: 60px;
+    gap: 60px;
 
 
-        padding: 0 40px 40px 40px;
+    padding: 0 40px 40px 40px;
 
 
-        position: relative;
+    position: relative;
 
 
-        z-index: 1;
+    z-index: 1;
 
 
-    }
+}
 
 
 
@@ -569,13 +569,19 @@ nav a:hover {
 
 
 
-.footer-column:nth-child(1) { animation-delay: 0.1s; }
+.footer-column:nth-child(1) {
+    animation-delay: 0.1s;
+}
 
 
-.footer-column:nth-child(2) { animation-delay: 0.2s; }
+.footer-column:nth-child(2) {
+    animation-delay: 0.2s;
+}
 
 
-.footer-column:nth-child(3) { animation-delay: 0.3s; }
+.footer-column:nth-child(3) {
+    animation-delay: 0.3s;
+}
 
 
 
@@ -701,16 +707,24 @@ nav a:hover {
 
 
 
-.footer-column ul li:nth-child(1) { animation-delay: 0.5s; }
+.footer-column ul li:nth-child(1) {
+    animation-delay: 0.5s;
+}
 
 
-.footer-column ul li:nth-child(2) { animation-delay: 0.6s; }
+.footer-column ul li:nth-child(2) {
+    animation-delay: 0.6s;
+}
 
 
-.footer-column ul li:nth-child(3) { animation-delay: 0.7s; }
+.footer-column ul li:nth-child(3) {
+    animation-delay: 0.7s;
+}
 
 
-.footer-column ul li:nth-child(4) { animation-delay: 0.8s; }
+.footer-column ul li:nth-child(4) {
+    animation-delay: 0.8s;
+}
 
 
 
@@ -1079,7 +1093,7 @@ nav a:hover {
     }
 
 
-    
+
 
 
     .footer-column {
@@ -1097,7 +1111,7 @@ nav a:hover {
     }
 
 
-    
+
 
 
     .footer-bottom-content {
@@ -1168,3 +1182,81 @@ nav a:hover {
 
 }
 
+
+/* ========== SECTION 3: WISATA ========== */
+.wisata {
+    padding: 60px 20px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.wisata-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.wisata-card {
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.wisata-card:hover {
+    transform: translateY(-5px);
+}
+
+.wisata-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.wisata-card h3 {
+    margin: 15px 0 10px;
+    color: #ffcc00;
+}
+
+.wisata-card p {
+    color: #ccc;
+    font-size: 0.9em;
+    padding: 0 15px 20px;
+}
+
+.info-wisata {
+    top: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-wisata a {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.info-wisata a:hover {
+    background-color: #f0f0f099;
+}

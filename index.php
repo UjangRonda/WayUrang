@@ -30,7 +30,7 @@
                 <div class="dropdown">
                     <a href="#tentang">Tentang ▾</a>
                     <div class="dropdown-menu">
-                        <a href="#web">Sejarah</a>
+                        <a href="sejarah.php">Sejarah</a>
                         <a href="#desa">Visi Misi</a>
                         <a href="#data">Struktur Organisasi</a>
                     </div>
@@ -108,6 +108,34 @@
     </div>
   </div>
 </section>
+
+<section id="section-3" class="wisata">
+  <div class="section-title">
+    <h2>Tempat Wisata di Way Urang</h2>
+    <p>Jelajahi keindahan alam dan budaya lokal yang ada di Kelurahan Way Urang.</p>
+  </div>
+  <div class="wisata-gallery">
+    <div class="wisata-card">
+      <img src="image/wisata-1.jpg" alt="Pantai Way Urang">
+      <h3>Pantai Way Urang</h3>
+      <p>Destinasi favorit warga lokal dengan pemandangan matahari terbenam yang indah.</p>
+    </div>
+    <div class="wisata-card">
+      <img src="image/wisata-2.jpg" alt="Air Terjun Talang Gulo">
+      <h3>Air Terjun Talang Gulo</h3>
+      <p>Tersembunyi di balik perbukitan, tempat ini cocok untuk hiking ringan.</p>
+    </div>
+    <div class="wisata-card">
+      <img src="image/wisata-3.jpg" alt="Taman Edukasi Way Urang">
+      <h3>Taman Edukasi</h3>
+      <p>Ruang terbuka hijau untuk edukasi anak dan kegiatan masyarakat.</p>
+    </div>
+  </div>
+  <div class="info-wisata">
+    <a href="">Lihat Selengkapnya</a>
+  </div>
+</section>
+
 
     <section class="content" id="tentang">
         <footer class="footer">
