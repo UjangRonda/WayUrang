@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pantai Sanggar - Paradise Beach</title>
+    <title>Pantai Senaya</title>
     <style>
         /* ================= GLOBAL ================= */
         * {
