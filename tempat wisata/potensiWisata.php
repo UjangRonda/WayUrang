@@ -737,7 +737,7 @@
         </a>
 
         <!-- Card 2 -->
-        <a href="detail-publikasi-2.html" class="publikasi-card">
+        <a href="pantaiSenaya.php" class="publikasi-card">
           <div class="card-image">
             <img src="../image/publikasi-2.jpg" alt="Judul Publikasi 2">
           </div>
@@ -750,12 +750,12 @@
         </a>
 
         <!-- Card 3 -->
-        <a href="detail-publikasi-3.html" class="publikasi-card">
+        <a href="pantaiAlauAlau.php" class="publikasi-card">
           <div class="card-image">
             <img src="../image/publikasi-3.jpg" alt="Judul Publikasi 3">
           </div>
           <div class="card-content">
-            <h3 class="card-title">Pantai Alau-alau</h3>
+            <h3 class="card-title">Alau-Alau Resort</h3>
             <p class="card-description">
               Pantai Alau-Alau adalah destinasi wisata dengan pasir putih bersih dan ombak tenang. Dikelilingi pepohonan rindang dan batu karang, pantai ini cocok untuk bersantai, bermain air, atau menikmati matahari terbenam.
             </p>
@@ -763,7 +763,7 @@
         </a>
 
         <!-- Card 4 -->
-        <a href="detail-publikasi-4.html" class="publikasi-card">
+        <a href="pantaiKedu.php" class="publikasi-card">
           <div class="card-image">
             <img src="../image/publikasi-4.jpg" alt="Judul Publikasi 4">
           </div>
@@ -776,7 +776,7 @@
         </a>
 
         <!-- Card 5 -->
-        <a href="detail-publikasi-5.html" class="publikasi-card">
+        <a href="pantaiKeduWarna.php" class="publikasi-card">
           <div class="card-image">
             <img src="../image/publikasi-5.jpg" alt="Judul Publikasi 5">
           </div>
@@ -789,7 +789,7 @@
         </a>
 
         <!-- Card 6 -->
-        <a href="detail-publikasi-6.html" class="publikasi-card">
+        <a href="pantaiAurora.php" class="publikasi-card">
           <div class="card-image">
             <img src="../image/publikasi-6.jpg" alt="Judul Publikasi 6">
           </div>
@@ -802,7 +802,7 @@
         </a>
 
         <!-- Card 7 -->
-        <a href="detail-publikasi-7.html" class="publikasi-card">
+        <a href="pantaiBenteng.php" class="publikasi-card">
           <div class="card-image">
             <img src="../image/publikasi-6.jpg" alt="Judul Publikasi 6">
           </div>
@@ -815,7 +815,7 @@
         </a>
 
         <!-- Card 8 -->
-        <a href="detail-publikasi-8.html" class="publikasi-card">
+        <a href="pantaiKalianda.php" class="publikasi-card">
           <div class="card-image">
             <img src="../image/publikasi-6.jpg" alt="Judul Publikasi 6">
           </div>

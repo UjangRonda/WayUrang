@@ -26,7 +26,8 @@
         /* ================= HERO SECTION ================= */
         .hero-section {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            background: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url('../image/sanggar-3.JPG') center/cover;
             display: flex;
             align-items: center;
@@ -178,7 +179,7 @@
         }
 
         .about-image::before {
-            content: "Sanggar Beach";
+            content: "";
             position: absolute;
             top: 50%;
             left: 50%;
@@ -976,7 +977,10 @@
                     <img src="../image/sanggar/sanggar (2).JPG"></img>
                 </div>
                 <div class="gallery-item">
-                    <img src="../image/sanggar/sanggar (3).JPG"></img>
+                    <img src="../image/sanggar/sanggar (5).JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/sanggar/sanggar (4).JPG"></img>
                 </div>
             </div>
         </div>
