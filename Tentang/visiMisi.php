@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visi Misi - Kelurahan Way Urang</title>
   <style>
-    /* ================= GLOBAL ================= */
     html {
       scroll-behavior: smooth;
     }
@@ -19,18 +18,23 @@
       font-style: normal;
       background: #111;
       color: #fff;
+
+      background: #f0f8ff;
+      /* soft-blue background */
+      color: #003366;
+
     }
 
     /* ================= NAVBAR ================= */
-
     .navbar {
       position: fixed;
       top: 0;
       width: 100%;
       background: transparent;
-      transition: background 0.3s ease, box-shadow 0.3s ease;
-      z-index: 10;
-      padding: 10px 0;
+      backdrop-filter: blur(15px);
+      transition: all 0.4s ease;
+      z-index: 1000;
+      padding: 15px 0;
       overflow: visible;
 
     }
@@ -42,29 +46,22 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(255, 255, 255, 0.95);
       transform: translateY(-100%);
       transition: transform 0.4s ease;
       z-index: -1;
+      box-shadow: 0 4px 20px rgba(0, 102, 204, 0.1);
     }
 
     .navbar.scrolled::before {
       transform: translateY(0);
     }
 
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-    }
 
     .nav-logo {
       display: flex;
       align-items: center;
-      color: #fff;
+      color: #0066cc;
       font-size: 1.2em;
       font-weight: 700;
     }
@@ -73,7 +70,81 @@
       height: 35px;
       margin-right: 8px;
     }
-    
+
+
+    .navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 32px rgba(0, 102, 204, 0.15);
+    }
+
+    .navbar.scrolled nav a,
+    .navbar.scrolled span {
+      color: #0066cc;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+
+    .nav-logo span {
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.2em;
+    }
+
+    nav a {
+      padding: 15px 20px;
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      color: #fff;
+      background-color: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .dropdown-menu a:hover {
+      color: #0066cc;
+    }
+
+    .navbar.scrolled .dropdown-menu a {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
 
     /* ================= RESPONSIVE ================= */
     @media (max-width: 768px) {
@@ -102,112 +173,27 @@
       }
     }
 
-
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: transparent;
-      z-index: 1000;
-      transition: background-color 0.3s ease;
-    }
-    nav a {
-    padding: 0 20px;
-    color: #fff;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffcc00;
-}
-
-
-    .navbar.scrolled {
-      background-color: #111;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav-logo img {
-      width: 40px;
-      height: auto;
-    }
-
-    .nav-logo span {
-      font-weight: bold;
-      color: #fff;
-      font-size: 1.2em;
-    }
-
-
-
-    /* Dropdown */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      z-index: 999;
-    }
-
-
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-
-    .dropdown-menu a {
-      display: block;
-      padding: 15px 20px;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-
     /* ================= HERO SECTION ================= */
     .hero-section {
       height: 60vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23333" width="1200" height="600"/><path fill="%234bc0c0" opacity="0.1" d="M0,300 Q300,100 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>') center/cover;
+      background: linear-gradient(rgba(0, 102, 204, 0.6), rgba(0, 180, 216, 0.6)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%230066cc" width="1200" height="600"/><path fill="%2387ceeb" opacity="0.1" d="M0,300 Q300,100 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>') center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       position: relative;
-      margin-top: 70px;
     }
 
     .hero-content h1 {
       font-size: 3.5em;
       margin: 0;
-      color: #4bc0c0;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .hero-content p {
+
       font-size: 1.3em;
       margin-top: 15px;
       color: #fff;
@@ -215,19 +201,20 @@ nav a:hover {
     }
 
     .breadcrumb {
+      color: #cceeff;
       margin-top: 20px;
       font-size: 1em;
       color: #ccc;
     }
 
     .breadcrumb a {
-      color: #4bc0c0;
+      color: #fff;
       text-decoration: none;
       transition: color 0.3s;
     }
 
     .breadcrumb a:hover {
-      color: #fff;
+      color: #0066cc;
     }
 
     /* ================= MAIN CONTENT ================= */
@@ -241,14 +228,18 @@ nav a:hover {
 
     .content-section {
       margin-bottom: 60px;
-      background: rgba(34, 34, 34, 0.8);
+      background: rgba(0, 102, 204, 0.07);
+      /* biru cerah transparan */
       padding: 40px;
       border-radius: 15px;
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 180, 216, 0.3);
+      /* tepi kebiruan */
+      box-shadow: 0 8px 32px rgba(0, 102, 204, 0.2);
+      /* bayangan kebiruan */
       transition: transform 0.3s ease;
     }
+
 
     .content-section:hover {
       transform: translateY(-5px);
@@ -294,7 +285,7 @@ nav a:hover {
 
 
     .visi-box h3 {
-      color: #4bc0c0;
+      color: #0066cc;
       font-size: 1.8em;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -305,7 +296,7 @@ nav a:hover {
 
     .visi-text {
       font-size: 1.3em;
-      color: #fff;
+      color: #003366;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -315,16 +306,17 @@ nav a:hover {
 
     .misi-container {
       background: linear-gradient(135deg,
-          rgba(255, 204, 0, 0.1),
-          rgba(75, 192, 192, 0.1));
+          rgba(0, 180, 216, 0.1),
+          rgba(135, 206, 235, 0.1));
       padding: 40px;
       border-radius: 20px;
-      border: 2px solid rgba(255, 204, 0, 0.3);
+      border: 2px solid rgba(0, 180, 216, 0.3);
       margin: 40px 0;
     }
 
+
     .misi-container h3 {
-      color: #ffcc00;
+      color: #0066cc;
       font-size: 1.8em;
       margin-bottom: 30px;
       text-align: center;
@@ -347,7 +339,7 @@ nav a:hover {
       margin: 20px 0;
       padding: 25px;
       border-radius: 15px;
-      border-left: 5px solid #ffcc00;
+      border-left: 5px solid #0066cc;
       position: relative;
       transition: all 0.3s ease;
     }
@@ -363,7 +355,7 @@ nav a:hover {
       position: absolute;
       left: -15px;
       top: 20px;
-      background: #ffcc00;
+      background: #00b4d8;
       color: #111;
       width: 30px;
       height: 30px;
@@ -383,7 +375,7 @@ nav a:hover {
       margin: 0;
       font-size: 1.1em;
       line-height: 1.7;
-      color: #e0e0e0;
+      color: #003366;
       text-align: justify;
       padding-left: 20px;
     }
@@ -419,7 +411,7 @@ nav a:hover {
     /* ================= FOOTER ================= */
     .footer {
       font-family: "Montserrat", sans-serif;
-      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+      background: linear-gradient(135deg, #0066cc 0%, #00b4d8 50%, #87ceeb 100%);
       color: white;
       padding: 50px 0 0 0;
       margin-top: 50px;
@@ -434,7 +426,7 @@ nav a:hover {
       left: 0;
       right: 0;
       bottom: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.02)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.08)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.08)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
       pointer-events: none;
     }
 
@@ -453,6 +445,32 @@ nav a:hover {
     .footer-column {
       flex: 1;
       max-width: 300px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .footer-column:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .footer-column:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .footer-column:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .footer-column:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .footer-column h3 {
@@ -471,40 +489,94 @@ nav a:hover {
       left: 0;
       width: 40px;
       height: 3px;
-      background: linear-gradient(90deg, #fbbf24, #f59e0b);
+      background: linear-gradient(90deg, #ffffff, #87ceeb);
       border-radius: 2px;
     }
 
-    .map-container {
-      margin-bottom: 20px;
-    }
-
-    .address {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 20px;
-      border-radius: 10px;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .address p {
-      font-size: 14px;
-      line-height: 1.7;
-      color: #e2e8f0;
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
       margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 12px;
+      transform: translateX(-10px);
+      opacity: 0;
+      animation: slideInLeft 0.5s ease forwards;
+    }
+
+    .footer-column ul li:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+
+    .footer-column ul li:nth-child(2) {
+      animation-delay: 0.6s;
+    }
+
+    .footer-column ul li:nth-child(3) {
+      animation-delay: 0.7s;
+    }
+
+    .footer-column ul li:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+
+    @keyframes slideInLeft {
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .footer-column ul li a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 14px;
       font-weight: 400;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+      border-radius: 6px;
+      position: relative;
+    }
+
+    .footer-column ul li a::before {
+      content: "▶";
+      margin-right: 10px;
+      font-size: 10px;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: white;
+      transform: translateX(5px);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .logo-lampung img {
+      width: 200px;
+    }
+
+    .footer-column ul li a:hover::before {
+      color: #87ceeb;
+      transform: scale(1.2);
     }
 
     .social-media {
-      display: flex;
-      gap: 15px;
+      width: 160px;
+      display: grid;
+      grid-auto-flow: column;
+      gap: 10px;
     }
 
     .social-media a {
       display: inline-block;
       width: 40px;
       height: 40px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.2);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -514,13 +586,150 @@ nav a:hover {
     }
 
     .social-media a:hover {
-      background: #ffcc00;
-      color: #111;
+      background: #ffffff;
+      color: #0066cc;
       transform: translateY(-3px);
     }
 
-    .logo-lampung img {
-      width: 200px;
+    .map-container {
+      margin-bottom: 20px;
+    }
+
+    .map-placeholder {
+      width: 100%;
+      height: 160px;
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border: 2px solid rgba(0, 102, 204, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0066cc;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 102, 204, 0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .map-placeholder:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0, 102, 204, 0.2);
+    }
+
+    .address {
+      background: rgba(0, 102, 204, 0.05);
+      border: 1px solid rgba(0, 102, 204, 0.15);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+
+    .address p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #003366;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .visitor-stats {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .stat-row:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .stat-row span:first-child {
+      color: #e2e8f0;
+    }
+
+    .stat-row span:last-child {
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 16px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .footer-bottom {
+      background: rgba(0, 102, 204, 0.3);
+      padding: 25px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-bottom-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: #e2e8f0;
+      font-weight: 400;
+    }
+
+    .footer-bottom-content p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .footer-bottom-content p:first-child {
+      font-weight: 500;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px 30px 20px;
+      }
+
+      .footer-bottom-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .footer-column h3 {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .footer-container {
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+    }
+
+    /* Scroll animation trigger */
+    .footer.animate .footer-column {
+      animation-play-state: running;
     }
 
     /* ================= RESPONSIVE ================= */
@@ -537,9 +746,12 @@ nav a:hover {
         padding: 25px;
       }
 
-      .visi-box,
-      .misi-container {
-        padding: 25px;
+      .org-image-container {
+        margin: 20px 0;
+      }
+
+      .org-image {
+        border-radius: 10px;
       }
 
       .navbar nav {
@@ -679,14 +891,15 @@ nav a:hover {
     </div>
   </footer>
 </body>
-                        <script>
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>
+<script>
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </html>
