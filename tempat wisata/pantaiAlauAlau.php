@@ -4,7 +4,7 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Alau-Alau Boutique Resort</title>
+      <title>Alau-Alau Boutique Resort Hotel</title>
       <style>
           /* ================= GLOBAL ================= */
           * {
@@ -1142,8 +1142,8 @@
       <section class="location-section">
           <div class="contact-container">
               <h2 class="contact-title">📍 Lokasi & Akses</h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9818422389394!2d105.57319927498645!3d-5.715752994266214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411100685c7d4f%3A0x7d4799d174a4131a!2sSENAYA%20BEACH!5e0!3m2!1sen!2sid!4v1754244332349!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.0905066793084!2d105.55685567477667!3d-5.700063056378764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411013fc2daf27%3A0xa22c45d7e60c3bd4!2sAlau%20Alau%20Boutique%20Resort%20Hotel!5e0!3m2!1sen!2sid!4v1754253206716!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
       </section>
 
       <!-- SECTION INFORMASI & KONTAK -->
@@ -1201,7 +1201,14 @@
                   <div class="footer-column">
                       <h3>Lokasi</h3>
                       <div class="map-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.0904697610026!2d105.55685567498615!3d-5.700068394281698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411013fc2daf27%3A0xa22c45d7e60c3bd4!2sAlau%20Alau%20Boutique%20Resort%20Hotel!5e0!3m2!1sen!2sid!4v1754252613455!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9174090236666!2d105.58537167474643!3d-5.725036194257011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411121219caf0d%3A0x29bacdcac4050a82!2sKantor%20Lurah%20Way%20Urang!5e0!3m2!1sen!2sid!4v1753858623359!5m2!1sen!2sid"
+                              width="100%"
+                              height="160"
+                              style="border:0; border-radius: 10px;"
+                              allowfullscreen=""
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade">
+                          </iframe>
                       </div>
                       <div class="address">
                           <p>Jl. Samudra Pasai No.33, Way Urang, Kec. Kalianda, Kota Lampung Selatan, Lampung<br>
