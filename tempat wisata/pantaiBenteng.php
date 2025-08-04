@@ -273,9 +273,6 @@
             grid-row: span 2;
         }
 
-        .gallery-item.medium {
-            /* 1x1 - ukuran default */
-        }
 
         /* HOVER EFFECTS */
         .gallery-item:hover {
