@@ -805,7 +805,7 @@
         <!-- Card 7 -->
         <a href="pantaiBenteng.php" class="publikasi-card">
           <div class="card-image">
-            <img src="../image/benteng.JPG" alt="Judul Publikasi 6">
+            <img src="../image/BentengTakeshi/benteng.JPG" alt="Judul Publikasi 6">
           </div>
           <div class="card-content">
             <h3 class="card-title">Pantai Benteng </h3>
