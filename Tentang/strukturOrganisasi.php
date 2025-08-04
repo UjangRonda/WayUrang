@@ -261,6 +261,10 @@
       align-items: center;
       margin: 40px 0;
     }
+    .org-image-container img{
+      width: 40%;
+      padding: 100px 200px;
+    }
 
     .org-image {
       max-width: 100%;
@@ -672,7 +676,7 @@
       <h2>Struktur Organisasi Kelurahan Way Urang</h2>
 
       <div class="org-image-container">
-        <img src="../image/struktur.png" alt="Struktur Organisasi Kelurahan Way Urang" class="org-image">
+        <img src="../image/kelurahan.png" alt="Struktur Organisasi Kelurahan Way Urang" class="org-image">
       </div>
     </div>
   </main>
