@@ -261,6 +261,7 @@
 
     .card-content {
       padding: 25px;
+      margin-top: -10px;
     }
 
     .card-title {
@@ -752,7 +753,7 @@
         <!-- Card 3 -->
         <a href="pantaiAlauAlau.php" class="publikasi-card">
           <div class="card-image">
-            <img src="../image/publikasi-3.jpg" alt="Judul Publikasi 3">
+            <img src="../image/alau-alau/alau-alau (cover).JPG" alt="Judul Publikasi 3">
           </div>
           <div class="card-content">
             <h3 class="card-title">Alau-Alau Resort</h3>

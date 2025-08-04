@@ -192,76 +192,139 @@
               opacity: 0.7;
           }
 
-          /* ================= GALLERY SECTION ================= */
-          .gallery-section {
-              background: linear-gradient(135deg, #f0fff4 0%, #e1f5fe 100%);
-              padding: 120px 0;
-          }
+           /* ================= GALLERY SECTION ================= */
+        .gallery-section {
+            background: linear-gradient(135deg, #f0fff4 0%, #e1f5fe 100%);
+            padding: 120px 0;
+        }
 
-          .gallery-container {
-              max-width: 1200px;
-              margin: 0 auto;
-              padding: 0 30px;
-              text-align: center;
-          }
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            text-align: center;
+        }
 
-          .gallery-title {
-              font-size: 3em;
-              background: linear-gradient(135deg, #0ed34f, #0d6de2);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-              margin-bottom: 20px;
-              font-weight: 800;
-          }
+        .gallery-title {
+            font-size: 3em;
+            background: linear-gradient(135deg, #0ed34f, #0d6de2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
 
-          .gallery-subtitle {
-              font-size: 1.2em;
-              color: #666;
-              margin-bottom: 60px;
-              font-style: italic;
-          }
+        .gallery-subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 60px;
+            font-style: italic;
+        }
 
-          .gallery-grid {
-              display: grid;
-              grid-template-columns: repeat(2, 1fr);
-              gap: 20px;
-              margin-bottom: 40px;
-          }
+        /* GRID LAYOUT */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 280px;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
 
-          .gallery-item {
-              background: linear-gradient(45deg, #0ed34f, #00bcd4, #0d6de2, #3f51b5);
-              height: 250px;
-              border-radius: 15px;
-              position: relative;
-              overflow: hidden;
-              cursor: pointer;
-              transition: all 0.3s ease;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 3em;
-              color: white;
-              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-          }
+        /* BASE GALLERY ITEM */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(14, 211, 79, 0.2);
+            transition: all 0.3s ease;
+        }
 
-          .gallery-item:hover {
-              transform: scale(1.05);
-              box-shadow: 0 15px 30px rgba(14, 211, 79, 0.4);
-          }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
 
-          .gallery-item.large {
-              grid-column: span 2;
-              height: 320px;
-              font-size: 4em;
-          }
+        /* UKURAN BERVARIASI */
+        .gallery-item.hero {
+            grid-column: span 3;
+            grid-row: span 1;
+        }
 
-          .gallery-item img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              display: block;
-          }
+        .gallery-item.hero1 {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .gallery-item.large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item.wide {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .gallery-item.tall {
+            grid-row: span 2;
+        }
+
+        .gallery-item.medium {
+            /* 1x1 - ukuran default */
+        }
+
+        /* HOVER EFFECTS */
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(14, 211, 79, 0.3);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 220px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 200px;
+            }
+            
+            .gallery-item.large {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+
+            .gallery-item.wide {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                grid-auto-rows: 200px;
+            }
+            
+            .gallery-item.large,
+            .gallery-item.wide,
+            .gallery-item.tall {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
 
           /* ================= FEATURES SECTION ================= */
           .features-section {
@@ -1033,29 +1096,60 @@
 
       <!-- Gallery Section -->
       <section class="gallery-section">
-          <div class="gallery-container">
-              <h2 class="gallery-title">Galeri Foto</h2>
-              <p class="gallery-subtitle">Jelajahi keindahan Pantai Sanggar melalui koleksi foto menawan</p>
+        <div class="gallery-container">
+            <h2 class="gallery-title">Galeri Foto</h2>
+            <p class="gallery-subtitle">Jelajahi keindahan Alau-Alau Resort melalui koleksi foto menawan</p>
 
-              <div class="gallery-grid">
-                  <div class="gallery-item large">
-                      <img src="../image/alau-alau/alau-alau (3).JPG"></img>
-                  </div>
-                  <div class="gallery-item">
-                      <img src="../image/alau-alau/alau-alau (4).JPG"></img>
-                  </div>
-                  <div class="gallery-item">
-                      <img src="../image/alau-alau/alau-alau (2).JPG"></img>
-                  </div>
-                  <div class="gallery-item">
-                      <img src="../image/alau-alau/alau-alau (6).JPG"></img>
-                  </div>
-                  <div class="gallery-item">
-                      <img src="../image/alau-alau/alau-alau (7).JPG"></img>
-                  </div>
-              </div>
-          </div>
-      </section>
+            <div class="gallery-grid">
+                <!-- ROW 1: 1 FOTO PENUH (3 kolom) -->
+                <div class="gallery-item hero1">
+                    <img src="../image/alau-alau/alau-alau (3).JPG" alt="Pemandangan Resort Utama">
+                </div>
+
+                <!-- ROW 2: 2 FOTO (2+1 kolom) -->
+                <div class="gallery-item wide">
+                    <img src="../image/alau-alau/alau-alau (5).JPG" alt="Pantai Alau-Alau">
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/alau-alau/alau-alau (8).JPG" alt="Villa View">
+                </div>
+
+                <!-- ROW 3: 1 FOTO PENUH (3 kolom) -->
+                <div class="gallery-item hero">
+                    <img src="../image/alau-alau/alau-alau (7).JPG" alt="Sunset di Resort">
+                </div>
+
+                <!-- ROW 4: 3 FOTO (1+1+1 kolom) -->
+                <div class="gallery-item medium">
+                    <img src="../image/alau-alau/alau-alau (10).JPG" alt="Cottage Area">
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/alau-alau/alau-alau (11).JPG" alt="Beach Activities">
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/alau-alau/alau-alau (14).JPG" alt="Resort Facilities">
+                </div>
+
+                <!-- ROW 5: 2 FOTO (1+2 kolom) -->
+                <div class="gallery-item medium">
+                    <img src="../image/alau-alau/alau-alau (4).JPG" alt="Dining Area">
+                </div>
+                <div class="gallery-item wide">
+                    <img src="../image/alau-alau/alau-alau (9).JPG" alt="Beach Panorama">
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/alau-alau/alau-alau (15).JPG" alt="Beach Panorama">
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/alau-alau/alau-alau (12).JPG" alt="Beach Panorama">
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/alau-alau/alau-alau (2).JPG" alt="Beach Panorama">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
       <!-- Features Section -->
       <section class="features-section">
