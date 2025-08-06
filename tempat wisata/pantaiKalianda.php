@@ -226,14 +226,14 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-bottom: 40px;
         }
 
         .gallery-item {
             background: linear-gradient(45deg, #7C4DFF, #00BFA5, #00C853, #A7FFEB);
-            height: 250px;
+            height: 320px;
             border-radius: 15px;
             position: relative;
             overflow: hidden;
@@ -252,7 +252,20 @@
             box-shadow: 0 15px 30px rgba(124, 77, 255, 0.4);
         }
 
+
         .gallery-item.large {
+            grid-column: span 3;
+            height: 320px;
+            font-size: 4em;
+        }
+
+        .gallery-item.wide {
+            grid-column: span 3;
+            height: 520px;
+            font-size: 4em;
+        }
+
+        .gallery-item.medium {
             grid-column: span 2;
             height: 320px;
             font-size: 4em;
@@ -978,21 +991,41 @@
             <p class="gallery-subtitle">Jelajahi keindahan Pantai Sanggar melalui koleksi foto menawan</p>
 
             <div class="gallery-grid">
-                <div class="gallery-item large">
-                    <img src="../image/Kalianda/Kalianda (6).JPG"></img>
+                <div class="gallery-item wide">
+                    <img src="../image/Kalianda/Kalianda (1).JPG"></img>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item medium">
                     <img src="../image/Kalianda/Kalianda (3).JPG"></img>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item ">
                     <img src="../image/Kalianda/Kalianda (2).JPG"></img>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item large">
                     <img src="../image/Kalianda/Kalianda (5).JPG"></img>
                 </div>
                 <div class="gallery-item">
                     <img src="../image/Kalianda/Kalianda (4).JPG"></img>
                 </div>
+                <div class="gallery-item medium">
+                    <img src="../image/Kalianda/Kalianda (6).JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/Kalianda/Kalianda (7).JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/Kalianda/Kalianda (8).JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/Kalianda/Kalianda (11).JPG"></img>
+
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/Kalianda/Kalianda (9).JPG"></img>
+                </div>
+                <div class="gallery-item ">
+                    <img src="../image/Kalianda/Kalianda (10).JPG"></img>
+                </div>
+
             </div>
         </div>
     </section>
