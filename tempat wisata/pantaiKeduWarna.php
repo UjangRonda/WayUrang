@@ -993,6 +993,18 @@
                 <div class="gallery-item">
                     <img src="../image/KeduWarna/KeduWarna (5).JPG"></img>
                 </div>
+                <div class="gallery-item">
+                    <img src="../image/KeduWarna/das.JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/KeduWarna/IMG_4268.JPG"></img>
+                </div> 
+                <div class="gallery-item">
+                    <img src="../image/KeduWarna/KeduWarna (7).JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/KeduWarna/IMG_4486.JPG"></img>
+                </div>
             </div>
         </div>
     </section>
@@ -1053,11 +1065,11 @@
 
             <div class="info-stats">
                 <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Pengunjung Harian</span>
+                    <span class="stat-number">600+</span>
+                    <span class="stat-label">Pengunjung Mingguan</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">4.7/5</span>
+                    <span class="stat-number">4.4/5</span>
                     <span class="stat-label">Rating Google</span>
                 </div>
             </div>

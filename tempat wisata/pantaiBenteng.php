@@ -1217,11 +1217,11 @@
 
               <div class="info-stats">
                   <div class="stat-item">
-                      <span class="stat-number">500++</span>
+                      <span class="stat-number">500+</span>
                       <span class="stat-label">Pengunjung Mingguan</span>
                   </div>
                   <div class="stat-item">
-                      <span class="stat-number">4.1/5</span>
+                      <span class="stat-number">4.6/5</span>
                       <span class="stat-label">Rating Google</span>
                   </div>
               </div>
