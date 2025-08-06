@@ -1053,7 +1053,7 @@
                     <span class="stat-label">Pengunjung Harian</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">4.7/5</span>
+                    <span class="stat-number">4.4/5</span>
                     <span class="stat-label">Rating Google</span>
                 </div>
             </div>
