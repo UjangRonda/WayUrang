@@ -227,14 +227,14 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-bottom: 40px;
         }
 
         .gallery-item {
             background: linear-gradient(45deg, #7E57C2, #4FC3F7, #FFD54F, #B3E5FC);
-            height: 250px;
+            height: 320px;
             border-radius: 15px;
             position: relative;
             overflow: hidden;
@@ -254,6 +254,18 @@
         }
 
         .gallery-item.large {
+            grid-column: span 3;
+            height: 320px;
+            font-size: 4em;
+        }
+
+        .gallery-item.wide {
+            grid-column: span 3;
+            height: 520px;
+            font-size: 4em;
+        }
+
+        .gallery-item.medium {
             grid-column: span 2;
             height: 320px;
             font-size: 4em;
@@ -953,7 +965,7 @@
             <p class="hero-subtitle">Discover Paradise</p>
             <h1 class="hero-title">PANTAI AURORA</h1>
             <p class="hero-description">
-              Pantai Aurora menawarkan pemandangan alam yang memikat. Salah satu daya tarik utamanya adalah café di area pantai yang menyediakan fasilitas karaoke, cocok untuk bersantai dan menikmati waktu bersama teman atau keluarga.
+                Pantai Aurora menawarkan pemandangan alam yang memikat. Salah satu daya tarik utamanya adalah café di area pantai yang menyediakan fasilitas karaoke, cocok untuk bersantai dan menikmati waktu bersama teman atau keluarga.
             </p>
         </div>
 
@@ -979,8 +991,8 @@
             <p class="gallery-subtitle">Jelajahi keindahan Pantai Sanggar melalui koleksi foto menawan</p>
 
             <div class="gallery-grid">
-                <div class="gallery-item large">
-                    <img src="../image/Aurora/Aurora.JPG"></img>
+                <div class="gallery-item wide">
+                    <img src="../image/Aurora/Aurora (5).JPG"></img>
                 </div>
                 <div class="gallery-item">
                     <img src="../image/Aurora/Aurora (3).JPG"></img>
@@ -989,11 +1001,22 @@
                     <img src="../image/Aurora/Aurora (2).JPG"></img>
                 </div>
                 <div class="gallery-item">
-                    <img src="../image/Aurora/Aurora (5).JPG"></img>
+                    <img src="../image/Aurora/Aurora.JPG"></img>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item medium">
                     <img src="../image/Aurora/Aurora (1).JPG"></img>
                 </div>
+                <div class="gallery-item">
+                    <img src="../image/Aurora/Aurora (6).JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/Aurora/Aurora (7).JPG"></img>
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/Aurora/Aurora (9).JPG"></img>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -1032,11 +1055,11 @@
                     <h3 class="feature-title">Villa & Cottage</h3>
                     <p class="feature-description">Tersedia penginapan nyaman bergaya villa dan cottage untuk pengalaman menginap yang lebih privat dan tenang di dekat pantai.</p>
                 </div>
-                                  <div class="feature-item">
-                      <div class="feature-icon">☕</div>
-                      <h3 class="feature-title">Beach Café</h3>
-                      <p class="feature-description">Café tepi pantai dengan berbagai pilihan menu dan minuman segar untuk menemani liburan Anda.</p>
-                  </div>
+                <div class="feature-item">
+                    <div class="feature-icon">☕</div>
+                    <h3 class="feature-title">Beach Café</h3>
+                    <p class="feature-description">Café tepi pantai dengan berbagai pilihan menu dan minuman segar untuk menemani liburan Anda.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1069,7 +1092,7 @@
         <div class="contact-container">
             <h2 class="contact-title">📍 Lokasi & Akses</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9658221051136!2d105.57561057498637!3d-5.718062494263911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4111801e65d03f%3A0xe5f91b9532d61b6f!2sAurora%20Beach!5e0!3m2!1sen!2sid!4v1754336819695!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        </div>
     </section>
 
     <!-- SECTION INFORMASI & KONTAK -->
