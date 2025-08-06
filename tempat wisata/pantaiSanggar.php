@@ -971,7 +971,7 @@
                     <img src="../image/sanggar/sanggar (3).JPG"></img>
                 </div>
                 <div class="gallery-item">
-                    <img src="../image/sanggar/sanggar (1).JPG"></img>
+                    <img src="../image/sanggar/sanggar (8).JPG"></img>
                 </div>
                 <div class="gallery-item">
                     <img src="../image/sanggar/sanggar (2).JPG"></img>
@@ -981,6 +981,12 @@
                 </div>
                 <div class="gallery-item">
                     <img src="../image/sanggar/sanggar (4).JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/sanggar/IMG_4052.JPG"></img>
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/sanggar/IMG_4094.JPG"></img>
                 </div>
             </div>
         </div>
@@ -1054,8 +1060,8 @@
 
             <div class="info-stats">
                 <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Pengunjung Harian</span>
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Pengunjung Mingguan</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">4.4/5</span>
