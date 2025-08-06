@@ -1099,7 +1099,7 @@
             <div class="info-stats">
                 <div class="stat-item">
                     <span class="stat-number">500+</span>
-                    <span class="stat-label">Pengunjung Harian</span>
+                    <span class="stat-label">Pengunjung Mingguan</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">4.7/5</span>

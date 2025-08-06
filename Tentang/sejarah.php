@@ -697,7 +697,7 @@
             <h1>Sejarah Way Urang</h1>
             <p>Mengenal Perjalanan Panjang Kelurahan Way Urang</p>
             <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <a href="#">Tentang</a> / <span>Sejarah</span>
+                <a href="../index.php">Beranda</a> / <a href="#">Tentang</a> / <span>Sejarah</span>
             </div>
         </div>
     </section>
