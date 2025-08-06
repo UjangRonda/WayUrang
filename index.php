@@ -270,7 +270,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: transparent;
+            background: gradient(180deg, #3e8cd9ff 40%, #316a94 20%, #2b526105 10%);
             backdrop-filter: blur(15px);
             transition: all 0.4s ease;
             z-index: 1000;
@@ -381,7 +381,7 @@
         .dropdown-menu a {
             display: block;
             color: #fff;
-            background-color: transparent;
+            background-color: rgba(0, 126, 216, 0.3);
             transition: all 0.3s ease;
         }
 
