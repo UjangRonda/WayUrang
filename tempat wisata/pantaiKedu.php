@@ -225,36 +225,19 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 280px;
+            gap: 25px;
             margin-bottom: 40px;
         }
 
+        /* BASE GALLERY ITEM */
         .gallery-item {
-            background: linear-gradient(45deg, #b5651d, #d2691e, #cd853f, #daa520);
-            height: 250px;
-            border-radius: 15px;
             position: relative;
             overflow: hidden;
-            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(14, 211, 79, 0.2);
             transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3em;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(181, 101, 29, 0.4);
-        }
-
-        .gallery-item.large {
-            grid-column: span 2;
-            height: 320px;
-            font-size: 4em;
         }
 
         .gallery-item img {
@@ -262,6 +245,37 @@
             height: 100%;
             object-fit: cover;
             display: block;
+            transition: transform 0.3s ease;
+        }
+
+        /* UKURAN BERVARIASI */
+        .gallery-item.hero {
+            grid-column: span 3;
+            grid-row: span 1;
+        }
+
+        .gallery-item.hero1 {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .gallery-item.large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item.wide {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .gallery-item.tall {
+            grid-row: span 2;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(181, 101, 29, 0.4);
         }
 
         /* ================= FEATURES SECTION ================= */
@@ -416,7 +430,7 @@
 
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 50px;
             margin-bottom: 50px;
         }
@@ -973,21 +987,36 @@
             <h2 class="gallery-title">Galeri Foto</h2>
             <p class="gallery-subtitle">Jelajahi keindahan Pantai Sanggar melalui koleksi foto menawan</p>
 
-            <div class="gallery-grid">
-                <div class="gallery-item large">
-                    <img src="../image/kedu/kedu (4).JPG"></img>
+           <div class="gallery-grid">
+                <!-- ROW 1: 1 FOTO PENUH (3 kolom) -->
+                <div class="gallery-item hero">
+                    <img src="../image/Kedu/kedu (10).JPG" alt="Pemandangan Resort Utama">
                 </div>
-                <div class="gallery-item">
-                    <img src="../image/kedu/kedu (1).JPG"></img>
+                <!-- ROW 2: 2 FOTO (2+1 kolom) -->
+                <div class="gallery-item wide">
+                    <img src="../image/Kedu/kedu (9).JPG" alt="Pantai Alau-Alau">
                 </div>
-                <div class="gallery-item">
-                    <img src="../image/kedu/kedu (2).JPG"></img>
+                <div class="gallery-item medium">
+                    <img src="../image/Kedu/IMG_3944.JPG" alt="Villa View">
                 </div>
-                <div class="gallery-item">
-                    <img src="../image/kedu/kedu (6).JPG"></img>
+
+                <!-- ROW 3: 1 FOTO PENUH (3 kolom) -->
+                 <div class="gallery-item medium">
+                    <img src="../image/Kedu/IMG_3948.JPG" alt="Cottage Area">
                 </div>
-                <div class="gallery-item">
-                    <img src="../image/kedu/kedu (7).JPG"></img>
+                <div class="gallery-item medium">
+                    <img src="../image/Kedu/kedu (4).JPG" alt="Sunset di Resort">
+                </div>
+
+                <!-- ROW 4: 3 FOTO (1+1+1 kolom) -->
+                 <div class="gallery-item medium">
+                    <img src="../image/Kedu/kedu (3).JPG" alt="Beach Activities">
+                </div>
+                <div class="gallery-item wide">
+                    <img src="../image/Kedu/kedu (1).JPG" alt="Cottage Area">
+                </div>
+                <div class="gallery-item medium">
+                    <img src="../image/Kedu/kedu (6).JPG" alt="Resort Facilities">
                 </div>
             </div>
         </div>
@@ -1050,10 +1079,14 @@
             <div class="info-stats">
                 <div class="stat-item">
                     <span class="stat-number">500+</span>
-                    <span class="stat-label">Pengunjung Harian</span>
+                    <span class="stat-label">Pengunjung Mingguan</span>
                 </div>
                 <div class="stat-item">
+<<<<<<< HEAD
+                    <span class="stat-number">4.5/5</span>
+=======
                     <span class="stat-number">4.4/5</span>
+>>>>>>> 9df322a1ccc6d212a817459a04801aa6f91713e8
                     <span class="stat-label">Rating Google</span>
                 </div>
             </div>
@@ -1082,6 +1115,18 @@
                         Area Camping: 24 Jam
                     </p>
                 </div>
+
+                <div class="contact-item">
+            <h3>📞 Kontak Informasi</h3>
+            <div class="social-icons-grid">
+                <a href="https://www.instagram.com/pantaikedu.id/" target="_blank" class="icon-box ig" aria-label="Instagram">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=0816279855" target="_blank" class="icon-box wa" aria-label="WhatsApp">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+                </a>
+            </div>
+            </div>
 
             </div>
 

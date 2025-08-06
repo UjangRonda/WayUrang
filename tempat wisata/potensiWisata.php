@@ -779,7 +779,7 @@
         <!-- Card 5 -->
         <a href="pantaiKeduWarna.php" class="publikasi-card">
           <div class="card-image">
-            <img src="../image/das.JPG" alt="Judul Publikasi 5">
+            <img src="../image/KeduWarna/IMG_4262.JPG" alt="Judul Publikasi 5">
           </div>
           <div class="card-content">
             <h3 class="card-title">Pantai Kedu Warna</h3>
