@@ -900,22 +900,17 @@
         <div class="stats-container">
             <!-- Statistik singkat -->
             <div class="stat-card">
-                <h3>5.842</h3>
+                <h3>14.844</h3>
                 <p>Jumlah Penduduk</p>
             </div>
             <div class="stat-card">
-                <h3>22</h3>
+                <h3>57</h3>
                 <p>Jumlah RT</p>
             </div>
             <div class="stat-card">
-                <h3>57%</h3>
+                <h3>77%</h3>
                 <p>Usia Produktif</p>
             </div>
-            <div class="stat-card">
-                <h3>12</h3>
-                <p>UMKM Aktif</p>
-            </div>
-        </div>
 
         <!-- Chart Section -->
         <div class="chart-wrapper">
@@ -937,18 +932,18 @@
         </div>
         <div class="wisata-gallery">
             <div class="wisata-card">
-                <img src="image/wisata-1.jpg" alt="Pantai Way Urang">
-                <h3>Pantai Way Urang</h3>
+                <img src="image/senaya/senaya (1).JPG" alt="Pantai Senaya">
+                <h3>Senaya Beach</h3>
                 <p>Destinasi favorit warga lokal dengan pemandangan matahari terbenam yang indah.</p>
             </div>
             <div class="wisata-card">
-                <img src="image/wisata-2.jpg" alt="Air Terjun Talang Gulo">
-                <h3>Air Terjun Talang Gulo</h3>
+                <img src="image/wisata-2.jpg" alt="Pantai Aurora">
+                <h3>Aurora Beach</h3>
                 <p>Tersembunyi di balik perbukitan, tempat ini cocok untuk hiking ringan.</p>
             </div>
             <div class="wisata-card">
-                <img src="image/wisata-3.jpg" alt="Taman Edukasi Way Urang">
-                <h3>Taman Edukasi</h3>
+                <img src="image/wisata-3.jpg" alt="Pantai Sanggar">
+                <h3>Sanggar Beach</h3>
                 <p>Ruang terbuka hijau untuk edukasi anak dan kegiatan masyarakat.</p>
             </div>
         </div>
@@ -1048,7 +1043,7 @@
             data: {
                 labels: ['Perempuan', 'Laki-laki'],
                 datasets: [{
-                    data: [4200, 4320],
+                    data: [7440, 7404],
                     backgroundColor: ['#ff4d6d', '#4d79ff'],
                 }]
             },

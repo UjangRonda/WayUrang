@@ -1082,7 +1082,11 @@
                     <span class="stat-label">Pengunjung Mingguan</span>
                 </div>
                 <div class="stat-item">
+<<<<<<< HEAD
                     <span class="stat-number">4.5/5</span>
+=======
+                    <span class="stat-number">4.4/5</span>
+>>>>>>> 9df322a1ccc6d212a817459a04801aa6f91713e8
                     <span class="stat-label">Rating Google</span>
                 </div>
             </div>
