@@ -4,9 +4,9 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Alau-Alau Boutique Resort Hotel</title>
+      <title>Pantai Benteng</title>
       <style>
-          /* ================= GLOBAL ================= */
+/* ================= GLOBAL ================= */
           * {
               margin: 0;
               padding: 0;
@@ -27,8 +27,8 @@
           .hero-section {
               height: 100vh;
               background:
-                  linear-gradient(rgba(14, 211, 79, 0.4), rgba(13, 109, 226, 0.4)),
-                  url('../image/alau-alau-1.JPG') center/cover;
+                  linear-gradient(rgba(255, 107, 61, 0.4), rgba(255, 166, 61, 0.4)),
+                  url('../image/BentengTakeshi/benteng.JPG') center/cover;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -157,7 +157,7 @@
 
           .about-content h2 {
               font-size: 3em;
-              background: linear-gradient(135deg, #0ed34f, #0d6de2);
+              background: linear-gradient(135deg, #FF6B3D, #FFA63D);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               background-clip: text;
@@ -174,12 +174,12 @@
           }
 
           .about-image {
-              background: url('../image/alau-alau/alau-alau\ \(1\).JPG') center/cover;
+              background: url('../image/BentengTakeshi/benteng11.JPG') center/cover;
               height: 400px;
               border-radius: 20px;
               position: relative;
               overflow: hidden;
-              box-shadow: 0 20px 40px rgba(14, 211, 79, 0.3);
+              box-shadow: 0 20px 40px rgba(255, 107, 61, 0.3);
           }
 
           .about-image::before {
@@ -192,136 +192,138 @@
               opacity: 0.7;
           }
 
-           /* ================= GALLERY SECTION ================= */
-        .gallery-section {
-            background: linear-gradient(135deg, #f0fff4 0%, #e1f5fe 100%);
-            padding: 120px 0;
-        }
+          /* ================= GALLERY SECTION ================= */
+          .gallery-section {
+              background: linear-gradient(135deg, #fff5f0 0%, #ffebe0 100%);
+              padding: 120px 0;
+          }
 
-        .gallery-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 30px;
-            text-align: center;
-        }
+          .gallery-container {
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 0 30px;
+              text-align: center;
+          }
 
-        .gallery-title {
-            font-size: 3em;
-            background: linear-gradient(135deg, #0ed34f, #0d6de2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 20px;
-            font-weight: 800;
-        }
+          .gallery-title {
+              font-size: 3em;
+              background: linear-gradient(135deg, #FF6B3D, #FFA63D);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              margin-bottom: 20px;
+              font-weight: 800;
+          }
 
-        .gallery-subtitle {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 60px;
-            font-style: italic;
-        }
+          .gallery-subtitle {
+              font-size: 1.2em;
+              color: #666;
+              margin-bottom: 60px;
+              font-style: italic;
+          }
 
-        /* GRID LAYOUT */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-auto-rows: 280px;
-            gap: 25px;
-            margin-bottom: 40px;
-        }
+          /* GRID LAYOUT */
+          .gallery-grid {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-auto-rows: 280px;
+              gap: 25px;
+              margin-bottom: 40px;
+          }
 
-        /* BASE GALLERY ITEM */
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(14, 211, 79, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        /* UKURAN BERVARIASI */
-        .gallery-item.hero {
-            grid-column: span 3;
-            grid-row: span 1;
-        }
-
-        .gallery-item.hero1 {
-            grid-column: span 3;
-            grid-row: span 2;
-        }
-
-        .gallery-item.large {
-            grid-column: span 2;
-            grid-row: span 2;
-        }
-
-        .gallery-item.wide {
-            grid-column: span 2;
-            grid-row: span 1;
-        }
-
-        .gallery-item.tall {
-            grid-row: span 2;
-        }
+          /* BASE GALLERY ITEM */
+          .gallery-item {
+              position: relative;
+              overflow: hidden;
+              border-radius: 15px;
+              box-shadow: 0 10px 30px rgba(255, 107, 61, 0.2);
+              transition: all 0.3s ease;
+          }
 
 
-        /* HOVER EFFECTS */
-        .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(14, 211, 79, 0.3);
-        }
 
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
+          .gallery-item img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+              transition: transform 0.3s ease;
+          }
 
-        /* RESPONSIVE DESIGN */
-        @media (max-width: 1024px) {
-            .gallery-grid {
-                grid-template-columns: repeat(3, 1fr);
-                grid-auto-rows: 220px;
-            }
-        }
+          /* UKURAN BERVARIASI */
+          .gallery-item.hero {
+              grid-column: span 3;
+              grid-row: span 1;
+          }
 
-        @media (max-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-                grid-auto-rows: 200px;
-            }
-            
-            .gallery-item.large {
-                grid-column: span 2;
-                grid-row: span 2;
-            }
+          .gallery-item.hero1 {
+              grid-column: span 3;
+              grid-row: span 2;
+          }
 
-            .gallery-item.wide {
-                grid-column: span 2;
-            }
-        }
+          .gallery-item.large {
+              grid-column: span 2;
+              grid-row: span 2;
+          }
 
-        @media (max-width: 480px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-                grid-auto-rows: 200px;
-            }
-            
-            .gallery-item.large,
-            .gallery-item.wide,
-            .gallery-item.tall {
-                grid-column: span 1;
-                grid-row: span 1;
-            }
-        }
+          .gallery-item.wide {
+              grid-column: span 2;
+              grid-row: span 1;
+          }
+
+          .gallery-item.tall {
+              grid-row: span 2;
+          }
+
+
+          /* HOVER EFFECTS */
+          .gallery-item:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 15px 40px rgba(255, 107, 61, 0.3);
+          }
+
+          .gallery-item:hover img {
+              transform: scale(1.05);
+          }
+
+          /* RESPONSIVE DESIGN */
+          @media (max-width: 1024px) {
+              .gallery-grid {
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-auto-rows: 220px;
+              }
+          }
+
+          @media (max-width: 768px) {
+              .gallery-grid {
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-auto-rows: 200px;
+              }
+
+              .gallery-item.large {
+                  grid-column: span 2;
+                  grid-row: span 2;
+              }
+
+              .gallery-item.wide {
+                  grid-column: span 2;
+              }
+          }
+
+          @media (max-width: 480px) {
+              .gallery-grid {
+                  grid-template-columns: 1fr;
+                  gap: 20px;
+                  grid-auto-rows: 200px;
+              }
+
+              .gallery-item.large,
+              .gallery-item.wide,
+              .gallery-item.tall {
+                  grid-column: span 1;
+                  grid-row: span 1;
+              }
+          }
 
           /* ================= FEATURES SECTION ================= */
           .features-section {
@@ -338,7 +340,7 @@
 
           .features-title {
               font-size: 3em;
-              background: linear-gradient(135deg, #0ed34f, #0d6de2);
+              background: linear-gradient(135deg, #FF6B3D, #FFA63D);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               background-clip: text;
@@ -348,7 +350,7 @@
 
           .features-grid {
               display: grid;
-              grid-template-columns: repeat(4, 1fr);
+              grid-template-columns: repeat(3, 1fr);
               gap: 40px;
           }
 
@@ -359,27 +361,27 @@
               border-radius: 20px;
               box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
               transition: all 0.3s ease;
-              border: 1px solid #e8f5e8;
+              border: 1px solid #ffebe0;
           }
 
           .feature-item:hover {
               transform: translateY(-15px);
-              box-shadow: 0 25px 50px rgba(14, 211, 79, 0.2);
-              border-color: #0d6de2;
+              box-shadow: 0 25px 50px rgba(255, 107, 61, 0.2);
+              border-color: #FFA63D;
           }
 
           .feature-icon {
               width: 100px;
               height: 100px;
               margin: 0 auto 25px;
-              background: linear-gradient(135deg, #0ed34f, #0d6de2);
+              background: linear-gradient(135deg, #FF6B3D, #FFA63D);
               border-radius: 50%;
               display: flex;
               align-items: center;
               justify-content: center;
               font-size: 2.5em;
               color: #fff;
-              box-shadow: 0 15px 30px rgba(14, 211, 79, 0.3);
+              box-shadow: 0 15px 30px rgba(255, 107, 61, 0.3);
           }
 
           .feature-title {
@@ -399,7 +401,7 @@
 
           /* ================= INFO SECTION ================= */
           .info-section {
-              background: linear-gradient(135deg, #0ed34f 0%, #00bcd4 25%, #0d6de2 75%, #3f51b5 100%);
+              background: linear-gradient(135deg, #FF6B3D 0%, #FF8A3D 25%, #FFA63D 75%, #FFB83D 100%);
               padding: 100px 0;
               color: white;
               text-align: center;
@@ -438,7 +440,7 @@
           .stat-number {
               font-size: 3em;
               font-weight: 900;
-              color: #e8f5fd;
+              color: #fff7f0;
               display: block;
               text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
           }
@@ -465,7 +467,7 @@
 
           .contact-title {
               font-size: 2.8em;
-              background: linear-gradient(135deg, #0ed34f, #0d6de2);
+              background: linear-gradient(135deg, #FF6B3D, #FFA63D);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               background-clip: text;
@@ -481,19 +483,19 @@
           }
 
           .contact-item {
-              background: linear-gradient(135deg, #f0fff4, #e1f5fe);
+              background: linear-gradient(135deg, #fff5f0, #ffebe0);
               padding: 40px 30px;
               border-radius: 15px;
-              border-left: 5px solid #0ed34f;
+              border-left: 5px solid #FF6B3D;
           }
 
           .contact-item a {
               text-decoration: none;
-              color: #0d6de2;
+              color: #FFA63D;
           }
 
           .contact-item h3 {
-              color: #0ed34f;
+              color: #FF6B3D;
               font-size: 1.3em;
               margin-bottom: 15px;
               font-weight: 700;
@@ -520,7 +522,7 @@
               align-items: center;
               justify-content: center;
               transition: transform 0.3s ease;
-              background: linear-gradient(135deg, #0ed34f, #0d6de2);
+              background: linear-gradient(135deg, #FF6B3D, #FFA63D);
               overflow: hidden;
           }
 
@@ -532,39 +534,39 @@
 
           .icon-box:hover {
               transform: scale(1.1);
-              box-shadow: 0 8px 25px rgba(14, 211, 79, 0.4);
+              box-shadow: 0 8px 25px rgba(255, 107, 61, 0.4);
           }
 
-          /* Platform-specific colors with green-blue theme */
+          /* Platform-specific colors with orange theme */
           .icon-box.ig {
-              background: linear-gradient(135deg, #0ed34f, #00bcd4);
+              background: linear-gradient(135deg, #FF6B3D, #FF8A3D);
           }
 
           .icon-box.tiktok {
-              background: linear-gradient(135deg, #000000, #0d6de2);
+              background: linear-gradient(135deg, #FF4500, #FFA63D);
           }
 
           .icon-box.wa {
-              background: linear-gradient(135deg, #0ed34f, #00a693);
+              background: linear-gradient(135deg, #FF6B3D, #FF7F50);
           }
 
           .icon-box.email {
-              background: linear-gradient(135deg, #0d6de2, #3f51b5);
+              background: linear-gradient(135deg, #FFA63D, #FFB83D);
           }
 
           .ticket-info {
               max-width: 800px;
               margin: 40px auto 0 auto;
-              background: linear-gradient(135deg, #f0fff4, #e1f5fe);
+              background: linear-gradient(135deg, #fff5f0, #ffebe0);
               border-radius: 15px;
               padding: 30px;
-              box-shadow: 0 10px 30px rgba(14, 211, 79, 0.2);
+              box-shadow: 0 10px 30px rgba(255, 107, 61, 0.2);
               color: #333;
           }
 
           .ticket-info h3 {
               margin-bottom: 25px;
-              background: linear-gradient(135deg, #0ed34f, #0d6de2);
+              background: linear-gradient(135deg, #FF6B3D, #FFA63D);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               background-clip: text;
@@ -584,20 +586,20 @@
               background: #ffffff;
               border-radius: 12px;
               padding: 20px;
-              box-shadow: 0 8px 25px rgba(14, 211, 79, 0.15);
-              border: 1px solid #c8e6c9;
+              box-shadow: 0 8px 25px rgba(255, 107, 61, 0.15);
+              border: 1px solid #ffd4c2;
               transition: transform 0.3s ease;
           }
 
           .ticket-card:hover {
               transform: translateY(-5px);
-              border-color: #0d6de2;
+              border-color: #FFA63D;
           }
 
           .ticket-card h4 {
               font-size: 1.3em;
               margin-bottom: 15px;
-              color: #0ed34f;
+              color: #FF6B3D;
           }
 
           .ticket-card ul {
@@ -622,7 +624,7 @@
               position: absolute;
               top: 30px;
               left: 30px;
-              background: linear-gradient(135deg, #0ed34f, #0d6de2);
+              background: linear-gradient(135deg, #FF6B3D, #FFA63D);
               color: #fff;
               padding: 10px 20px;
               border-radius: 30px;
@@ -630,21 +632,21 @@
               font-family: "Montserrat", sans-serif;
               font-weight: 600;
               font-size: 1em;
-              box-shadow: 0 4px 12px rgba(14, 211, 79, 0.3);
+              box-shadow: 0 4px 12px rgba(255, 107, 61, 0.3);
               transition: all 0.3s ease;
               z-index: 99;
           }
 
           .back-button:hover {
-              background: linear-gradient(135deg, #0bc947, #0b5dd9);
+              background: linear-gradient(135deg, #e5623b, #e59539);
               transform: scale(1.05);
-              box-shadow: 0 6px 20px rgba(14, 211, 79, 0.4);
+              box-shadow: 0 6px 20px rgba(255, 107, 61, 0.4);
           }
 
           /* Footer */
           .footer {
               font-family: "Montserrat", sans-serif;
-              background: linear-gradient(135deg, #0ed34f 0%, #00bcd4 25%, #0d6de2 75%, #3f51b5 100%);
+              background: linear-gradient(135deg, #FF6B3D 0%, #FF8A3D 25%, #FFA63D 75%, #FFB83D 100%);
               color: white;
               padding: 50px 0 0 0;
               margin-top: 50px;
@@ -722,7 +724,7 @@
               left: 0;
               width: 40px;
               height: 3px;
-              background: linear-gradient(90deg, #ffffff, #e8f5fd);
+              background: linear-gradient(90deg, #ffffff, #fff7f0);
               border-radius: 2px;
           }
 
@@ -763,7 +765,7 @@
           }
 
           .footer-column ul li a {
-              color: #c8e6c9;
+              color: #ffd4c2;
               text-decoration: none;
               font-size: 14px;
               font-weight: 400;
@@ -790,7 +792,7 @@
           }
 
           .footer-column ul li a:hover::before {
-              color: #e8f5fd;
+              color: #fff7f0;
               transform: scale(1.2);
           }
 
@@ -816,7 +818,7 @@
 
           .social-media a:hover {
               background: #ffffff;
-              color: #0ed34f;
+              color: #FF6B3D;
               transform: translateY(-3px);
           }
 
@@ -827,24 +829,24 @@
           .map-placeholder {
               width: 100%;
               height: 160px;
-              background: linear-gradient(135deg, #ffffff 0%, #f0fff4 100%);
-              border: 2px solid rgba(14, 211, 79, 0.2);
+              background: linear-gradient(135deg, #ffffff 0%, #fff5f0 100%);
+              border: 2px solid rgba(255, 107, 61, 0.2);
               display: flex;
               align-items: center;
               justify-content: center;
-              color: #0d6de2;
+              color: #FFA63D;
               font-size: 13px;
               font-weight: 500;
               border-radius: 10px;
               backdrop-filter: blur(10px);
-              box-shadow: 0 8px 32px rgba(14, 211, 79, 0.1);
+              box-shadow: 0 8px 32px rgba(255, 107, 61, 0.1);
               transition: all 0.3s ease;
               cursor: pointer;
           }
 
           .map-placeholder:hover {
               transform: translateY(-2px);
-              box-shadow: 0 12px 40px rgba(14, 211, 79, 0.2);
+              box-shadow: 0 12px 40px rgba(255, 107, 61, 0.2);
           }
 
           .address {
@@ -858,7 +860,7 @@
           .address p {
               font-size: 14px;
               line-height: 1.7;
-              color: #c8e6c9;
+              color: #ffd4c2;
               margin: 0;
               font-weight: 400;
           }
@@ -889,7 +891,7 @@
           }
 
           .stat-row span:first-child {
-              color: #c8e6c9;
+              color: #ffd4c2;
           }
 
           .stat-row span:last-child {
@@ -900,7 +902,7 @@
           }
 
           .footer-bottom {
-              background: linear-gradient(135deg, #0bc947, #0b5dd9);
+              background: linear-gradient(135deg, #e5623b, #e59539);
               padding: 25px 0;
               border-top: 1px solid rgba(255, 255, 255, 0.2);
               backdrop-filter: blur(10px);
@@ -916,7 +918,7 @@
               justify-content: space-between;
               align-items: center;
               font-size: 13px;
-              color: #c8e6c9;
+              color: #ffd4c2;
               font-weight: 400;
           }
 
@@ -990,70 +992,69 @@
               animation-play-state: running;
           }
 
-.ticket-info {
-  max-width: 600px;
-  margin: 40px auto;
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.15);
-  color: #004d66;
-  position: relative;
-  overflow: hidden;
-}
+          .ticket-info {
+              max-width: 600px;
+              margin: 40px auto;
+              background: linear-gradient(135deg, #fff5f0, #ffffff);
+              border-radius: 15px;
+              padding: 30px;
+              box-shadow: 0 6px 20px rgba(0, 102, 204, 0.15);
+              color: #004d66;
+              position: relative;
+              overflow: hidden;
+          }
 
-.ticket-info::before {
-  content: "🏡";
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 3em;
-  opacity: 0.1;
-}
+          .ticket-info::before {
+              content: "🏡";
+              position: absolute;
+              top: 15px;
+              right: 20px;
+              font-size: 3em;
+              opacity: 0.1;
+          }
 
-.ticket-info h3 {
-  margin-bottom: 20px;
-  font-size: 1.6em;
-  color: #0066cc;
-  text-align: center;
-  border-bottom: 2px dashed rgba(0, 102, 204, 0.3);
-  padding-bottom: 10px;
-}
+          .ticket-info h3 {
+              margin-bottom: 20px;
+              font-size: 1.6em;
+              color: #0066cc;
+              text-align: center;
+              border-bottom: 2px dashed rgba(0, 102, 204, 0.3);
+              padding-bottom: 10px;
+          }
 
-.ticket-grid {
-  display: flex;
-  justify-content: center;
-}
+          .ticket-grid {
+              display: flex;
+              justify-content: center;
+          }
 
-.ticket-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 20px 25px;
-  box-shadow: 0 4px 10px rgba(0, 102, 204, 0.1);
-  border-left: 4px solid #00b4d8;
-  width: 100%;
-  text-align: left;
-  transition: transform 0.3s ease;
-}
+          .ticket-card {
+              background: #ffffff;
+              border-radius: 12px;
+              padding: 20px 25px;
+              box-shadow: 0 4px 10px rgba(0, 102, 204, 0.1);
+              border-left: 4px solid #d84400ff;
+              width: 100%;
+              text-align: left;
+              transition: transform 0.3s ease;
+          }
 
-.ticket-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 102, 204, 0.15);
-}
+          .ticket-card:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 10px 25px rgba(0, 102, 204, 0.15);
+          }
 
-.ticket-card h4 {
-  margin-bottom: 10px;
-  font-size: 1.2em;
-  color: #00b4d8;
-}
+          .ticket-card h4 {
+              margin-bottom: 10px;
+              font-size: 1.2em;
+              color: #e59539;
+          }
 
-.ticket-card ul {
-  padding-left: 20px;
-  font-size: 0.95em;
-  color: #333;
-  line-height: 1.7;
-}
-
+          .ticket-card ul {
+              padding-left: 20px;
+              font-size: 0.95em;
+              color: #333;
+              line-height: 1.7;
+          }
       </style>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1093,59 +1094,50 @@
 
       <!-- Gallery Section -->
       <section class="gallery-section">
-        <div class="gallery-container">
-            <h2 class="gallery-title">Galeri Foto</h2>
-            <p class="gallery-subtitle">Jelajahi keindahan Alau-Alau Resort melalui koleksi foto menawan</p>
+          <div class="gallery-container">
+              <h2 class="gallery-title">Galeri Foto</h2>
+              <p class="gallery-subtitle">Jelajahi keindahan Pantai Benteng melalui koleksi foto menawan</p>
 
-            <div class="gallery-grid">
-                <!-- ROW 1: 1 FOTO PENUH (3 kolom) -->
-                <div class="gallery-item hero1">
-                    <img src="../image/alau-alau/alau-alau (3).JPG" alt="Pemandangan Resort Utama">
-                </div>
+              <div class="gallery-grid">
+                  <!-- ROW 1: 1 FOTO PENUH (3 kolom) -->
+                  <div class="gallery-item hero1">
+                      <img src="../image/BentengTakeshi/benteng.JPG" alt="Pemandangan Resort Utama">
+                  </div>
 
-                <!-- ROW 2: 2 FOTO (2+1 kolom) -->
-                <div class="gallery-item wide">
-                    <img src="../image/alau-alau/alau-alau (5).JPG" alt="Pantai Alau-Alau">
-                </div>
-                <div class="gallery-item medium">
-                    <img src="../image/alau-alau/alau-alau (8).JPG" alt="Villa View">
-                </div>
+                  <!-- ROW 2: 2 FOTO (2+1 kolom) -->
+                  <div class="gallery-item wide">
+                      <img src="../image/BentengTakeshi/benteng1.JPG" alt="Pemandangan Resort Utama">
+                  </div>
+                  <div class="gallery-item medium">
+                      <img src="../image/BentengTakeshi/benteng10.JPG" alt="Pemandangan Resort Utama">
+                  </div>
 
-                <!-- ROW 3: 1 FOTO PENUH (3 kolom) -->
-                <div class="gallery-item hero">
-                    <img src="../image/alau-alau/alau-alau (7).JPG" alt="Sunset di Resort">
-                </div>
+                  <!-- ROW 3: 1 FOTO PENUH (3 kolom) -->
+                  <div class="gallery-item hero">
+                      <img src="../image/BentengTakeshi/benteng3.JPG" alt="Pemandangan Resort Utama">
+                  </div>
 
-                <!-- ROW 4: 3 FOTO (1+1+1 kolom) -->
-                <div class="gallery-item medium">
-                    <img src="../image/alau-alau/alau-alau (10).JPG" alt="Cottage Area">
-                </div>
-                <div class="gallery-item medium">
-                    <img src="../image/alau-alau/alau-alau (11).JPG" alt="Beach Activities">
-                </div>
-                <div class="gallery-item medium">
-                    <img src="../image/alau-alau/alau-alau (14).JPG" alt="Resort Facilities">
-                </div>
+                  <!-- ROW 4: 3 FOTO (1+1+1 kolom) -->
+                  <div class="gallery-item medium">
+                      <img src="../image/BentengTakeshi/benteng4.JPG" alt="Pemandangan Resort Utama">
+                  </div>
+                  <div class="gallery-item medium">
+                      <img src="../image/BentengTakeshi/benteng2.JPG" alt="Pemandangan Resort Utama">
+                  </div>
+                  <div class="gallery-item medium">
+                      <img src="../image/BentengTakeshi/benteng6.JPG" alt="Pemandangan Resort Utama">
+                  </div>
 
-                <!-- ROW 5: 2 FOTO (1+2 kolom) -->
-                <div class="gallery-item medium">
-                    <img src="../image/alau-alau/alau-alau (4).JPG" alt="Dining Area">
-                </div>
-                <div class="gallery-item wide">
-                    <img src="../image/alau-alau/alau-alau (9).JPG" alt="Beach Panorama">
-                </div>
-                <div class="gallery-item medium">
-                    <img src="../image/alau-alau/alau-alau (15).JPG" alt="Beach Panorama">
-                </div>
-                <div class="gallery-item medium">
-                    <img src="../image/alau-alau/alau-alau (12).JPG" alt="Beach Panorama">
-                </div>
-                <div class="gallery-item medium">
-                    <img src="../image/alau-alau/alau-alau (2).JPG" alt="Beach Panorama">
-                </div>
-            </div>
-        </div>
-    </section>
+                  <!-- ROW 5: 2 FOTO (1+2 kolom) -->
+                  <div class="gallery-item medium">
+                      <img src="../image/BentengTakeshi/benteng7.JPG" alt="Pemandangan Resort Utama">
+                  </div>
+                  <div class="gallery-item wide">
+                      <img src="../image/BentengTakeshi/benteng8.JPG" alt="Pemandangan Resort Utama">
+                  </div>
+              </div>
+          </div>
+      </section>
 
 
       <!-- Features Section -->
@@ -1179,12 +1171,6 @@
                   </div>
 
                   <div class="feature-item">
-                      <div class="feature-icon">💍</div>
-                      <h3 class="feature-title">Prewedding</h3>
-                      <p class="feature-description">Latar pemandangan pantai yang romantis dan eksotis, cocok untuk sesi foto prewedding impian Anda.</p>
-                  </div>
-
-                  <div class="feature-item">
                       <div class="feature-icon">🌇</div>
                       <h3 class="feature-title">Sunset Viewing</h3>
                       <p class="feature-description">Nikmati panorama matahari terbenam yang menakjubkan dengan semburat warna langit yang indah.</p>
@@ -1196,11 +1182,6 @@
                       <p class="feature-description">Tersedia penginapan nyaman seperti villa dan cottage dengan pemandangan langsung ke pantai.</p>
                   </div>
 
-                  <div class="feature-item">
-                      <div class="feature-icon">🛻</div>
-                      <h3 class="feature-title">ATV</h3>
-                      <p class="feature-description">Uji adrenalin dengan berkendara ATV menyusuri jalur pantai yang menantang dan seru.</p>
-                  </div>
 
               </div>
           </div>
@@ -1210,7 +1191,7 @@
       <!-- Info Section -->
       <section class="info-section">
           <div class="info-container">
-              <h2 class="info-title">Mengapa Memilih Alau-Alau Resort?</h2>
+              <h2 class="info-title">Mengapa Memilih Pantai Benteng?</h2>
               <p class="info-description">
                   Pantai Senaya bukan hanya sekedar destinasi wisata, tetapi sebuah pengalaman yang akan mengisi hati Anda dengan kedamaian dan kebahagiaan. Dengan keindahan alam yang masih asri dan fasilitas yang lengkap, pantai ini menjadi pilihan terbaik untuk melepas penat dari rutinitas sehari-hari.
               </p>
@@ -1221,7 +1202,7 @@
                       <span class="stat-label">Pengunjung Mingguan</span>
                   </div>
                   <div class="stat-item">
-                      <span class="stat-number">4.1/5</span>
+                      <span class="stat-number">4.6/5</span>
                       <span class="stat-label">Rating Google</span>
                   </div>
               </div>
@@ -1233,7 +1214,7 @@
       <section class="location-section">
           <div class="contact-container">
               <h2 class="contact-title">📍 Lokasi & Akses</h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.0905066793084!2d105.55685567477667!3d-5.700063056378764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411013fc2daf27%3A0xa22c45d7e60c3bd4!2sAlau%20Alau%20Boutique%20Resort%20Hotel!5e0!3m2!1sen!2sid!4v1754253206716!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.8877299498427!2d105.5837375747771!3d-5.729307156622479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4111794bbf01d5%3A0xfea50084aa4be2ba!2sPantai%20Benteng%20Wayurang!5e0!3m2!1sen!2sid!4v1754494789211!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
       </section>
 
@@ -1246,7 +1227,7 @@
                   <div class="contact-item">
                       <h3>🕒 Jam Operasional</h3>
                       <p>
-                          Senin - Minggu: 00.00 - 24.00 <br>
+                          Senin - Minggu: 08.00 - 21.00 <br>
                           Area Camping: 24 Jam
                       </p>
                   </div>
@@ -1254,10 +1235,10 @@
                   <div class="contact-item">
                       <h3>📞 Kontak Informasi</h3>
                       <div class="social-icons-grid">
-                          <a href="https://www.instagram.com/alaualauboutiqueresort/" target="_blank" class="icon-box ig" aria-label="Instagram">
+                          <a href="https://www.instagram.com/benteng_onthebeach" target="_blank" class="icon-box ig" aria-label="Instagram">
                               <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
                           </a>
-                          <a href="https://wa.me/62811727638 " target="_blank" class="icon-box wa" aria-label="WhatsApp">
+                          <a href="https://wa.me/082164219212" target="_blank" class="icon-box wa" aria-label="WhatsApp">
                               <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
                           </a>
                       </div>
@@ -1272,13 +1253,10 @@
                   <h3>💰 Harga Tiket</h3>
                   <div class="ticket-grid">
                       <div class="ticket-card weekday">
-                          <h4>🗓️ Range Tiket Villa / Cottage</h4>
-                          <ul>
-                              <li> Rp 350.000 - Rp 1.500.000 </li>
-                          </ul>
                           <h4>🗓️ Tiket Masuk </h4>
                           <ul>
-                              <li> Rp 50.000 </li>
+                              <li>👨‍🦱 Dewasa: Rp 10.000</li>
+                              <li>🧒 Anak-anak: Rp 5.000</li>
                           </ul>
                       </div>
                   </div>

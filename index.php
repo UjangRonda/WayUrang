@@ -324,6 +324,7 @@
             background-color: rgba(255, 255, 255, 0.95);
             box-shadow: 0 8px 32px rgba(0, 102, 204, 0.15);
         }
+
         .navbar.scrolled nav a,
         .navbar.scrolled span {
             color: #0066cc;
@@ -835,8 +836,6 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 180, 216, 0.4);
         }
-
-        
     </style>
 </head>
 
@@ -912,17 +911,17 @@
                 <p>Usia Produktif</p>
             </div>
 
-        <!-- Chart Section -->
-        <div class="chart-wrapper">
-            <div class="chart-box">
-                <h3>Rasio Jenis Kelamin</h3>
-                <canvas id="genderChart"></canvas>
+            <!-- Chart Section -->
+            <div class="chart-wrapper">
+                <div class="chart-box">
+                    <h3>Rasio Jenis Kelamin</h3>
+                    <canvas id="genderChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h3>Distribusi Pekerjaan</h3>
+                    <canvas id="jobChart"></canvas>
+                </div>
             </div>
-            <div class="chart-box">
-                <h3>Distribusi Pekerjaan</h3>
-                <canvas id="jobChart"></canvas>
-            </div>
-        </div>
     </section>
 
     <section id="section-3" class="wisata">
@@ -934,18 +933,19 @@
             <div class="wisata-card">
                 <img src="image/senaya/senaya (1).JPG" alt="Pantai Senaya">
                 <h3>Senaya Beach</h3>
-                <p>Destinasi favorit warga lokal dengan pemandangan matahari terbenam yang indah.</p>
+                <p>Destinasi favorit warga lokal untuk menikmati pemandangan matahari terbenam dan angin pantai yang sejuk.</p>
             </div>
             <div class="wisata-card">
-                <img src="image/wisata-2.jpg" alt="Pantai Aurora">
+                <img src="image/Aurora/Aurora (1).JPG" alt="Pantai Aurora">
                 <h3>Aurora Beach</h3>
-                <p>Tersembunyi di balik perbukitan, tempat ini cocok untuk hiking ringan.</p>
+                <p>Terletak di balik perbukitan, pantai ini menawarkan suasana tenang dan cocok untuk berjalan santai atau berfoto.</p>
             </div>
             <div class="wisata-card">
-                <img src="image/wisata-3.jpg" alt="Pantai Sanggar">
+                <img src="image/sanggar-1.JPG" alt="Pantai Sanggar">
                 <h3>Sanggar Beach</h3>
-                <p>Ruang terbuka hijau untuk edukasi anak dan kegiatan masyarakat.</p>
+                <p>Pantai berpasir putih yang sering digunakan sebagai tempat edukasi alam dan kegiatan masyarakat lokal.</p>
             </div>
+
         </div>
         <div class="info-wisata">
             <a href="">Lihat Selengkapnya</a>
