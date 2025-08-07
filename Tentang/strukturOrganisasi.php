@@ -68,9 +68,9 @@
     }
 
     .nav-logo a {
-            display: flex;
-            text-decoration: none;
-        }
+      display: flex;
+      text-decoration: none;
+    }
 
     .nav-logo img {
       height: 35px;
@@ -266,7 +266,8 @@
       align-items: center;
       margin: 40px 0;
     }
-    .org-image-container img{
+
+    .org-image-container img {
       width: 40%;
       padding: 100px 200px;
     }
@@ -466,6 +467,27 @@
       transform: translateY(-3px);
     }
 
+    /* CSS Instagram dengan efek gradient menggunakan filter */
+    .social-media a.social-link-instagram:hover {
+      background: #ffffff !important;
+      transform: translateY(-3px);
+    }
+
+    .social-media a.social-link-instagram:hover svg {
+      filter:
+        sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
+    }
+
+    .social-media a.social-link-instagram:active {
+      background: #ffffff !important;
+      transform: translateY(-1px);
+    }
+
+    .social-media a.social-link-instagram:active svg {
+      filter:
+        sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
+    }
+
     .map-container {
       margin-bottom: 20px;
     }
@@ -649,8 +671,8 @@
     <div class="nav-container">
       <div class="nav-logo">
         <a href="../index.php">
-        <img src="../image/logo.png" alt="Logo Kelurahan">
-        <span>Way Urang</span>
+          <img src="../image/logo.png" alt="Logo Kelurahan">
+          <span>Way Urang</span>
         </a>
       </div>
       <nav>
@@ -688,26 +710,26 @@
   </main>
 
   <section class="content" id="tentang">
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-column">
-                    <h3>Lokasi</h3>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9174090236666!2d105.58537167474643!3d-5.725036194257011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411121219caf0d%3A0x29bacdcac4050a82!2sKantor%20Lurah%20Way%20Urang!5e0!3m2!1sen!2sid!4v1753858623359!5m2!1sen!2sid"
-                            width="100%"
-                            height="160"
-                            style="border:0; border-radius: 10px;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                    <div class="address">
-                        <p>Jl. Samudra Pasai No.33, Way Urang, Kec. Kalianda, Kota Lampung Selatan, Lampung<br>
-                            Kode Pos 35716</p>
-                    </div>
-                </div>
-                <div class="footer-column">
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Lokasi</h3>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9174090236666!2d105.58537167474643!3d-5.725036194257011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411121219caf0d%3A0x29bacdcac4050a82!2sKantor%20Lurah%20Way%20Urang!5e0!3m2!1sen!2sid!4v1753858623359!5m2!1sen!2sid"
+              width="100%"
+              height="160"
+              style="border:0; border-radius: 10px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="address">
+            <p>Jl. Samudra Pasai No.33, Way Urang, Kec. Kalianda, Kota Lampung Selatan, Lampung<br>
+              Kode Pos 35716</p>
+          </div>
+        </div>
+        <div class="footer-column">
           <h3>Navigasi</h3>
           <ul class="footer-nav">
             <li><a href="../index.php">Beranda</a></li>
@@ -734,17 +756,17 @@
             </a>
           </div>
         </div>
-            </div>
+      </div>
 
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>© Kelurahan Way Urang.</p>
-                    <p>Support By : KKN Mahasiswa Universitas Sebelas Maret</p>
-                </div>
-            </div>
-        </footer>
-    </section>
-  
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>© Kelurahan Way Urang.</p>
+          <p>Support By : KKN Mahasiswa Universitas Sebelas Maret</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
 </body>
 <script>
   const navbar = document.querySelector('.navbar');

@@ -72,9 +72,9 @@
     }
 
     .nav-logo a {
-            display: flex;
-            text-decoration: none;
-        }
+      display: flex;
+      text-decoration: none;
+    }
 
     .navbar.scrolled {
       background-color: rgba(255, 255, 255, 0.95);
@@ -593,6 +593,27 @@
       background: #ffffff;
       color: #0066cc;
       transform: translateY(-3px);
+    }
+
+    /* CSS Instagram dengan efek gradient menggunakan filter */
+    .social-media a.social-link-instagram:hover {
+      background: #ffffff !important;
+      transform: translateY(-3px);
+    }
+
+    .social-media a.social-link-instagram:hover svg {
+      filter:
+        sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
+    }
+
+    .social-media a.social-link-instagram:active {
+      background: #ffffff !important;
+      transform: translateY(-1px);
+    }
+
+    .social-media a.social-link-instagram:active svg {
+      filter:
+        sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
     }
 
     .map-container {

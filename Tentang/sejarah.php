@@ -467,7 +467,7 @@
 
         .social-media {
             width: 160px;
-            display: flex   ;
+            display: flex;
             grid-auto-flow: column;
             gap: 10px;
         }
@@ -489,6 +489,27 @@
             background: #ffffff;
             color: #0066cc;
             transform: translateY(-3px);
+        }
+
+        /* CSS Instagram dengan efek gradient menggunakan filter */
+        .social-media a.social-link-instagram:hover {
+            background: #ffffff !important;
+            transform: translateY(-3px);
+        }
+
+        .social-media a.social-link-instagram:hover svg {
+            filter:
+                sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
+        }
+
+        .social-media a.social-link-instagram:active {
+            background: #ffffff !important;
+            transform: translateY(-1px);
+        }
+
+        .social-media a.social-link-instagram:active svg {
+            filter:
+                sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
         }
 
         .map-container {
@@ -664,7 +685,6 @@
                 gap: 30px;
             }
         }
-        
     </style>
 </head>
 
@@ -673,8 +693,8 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.php">
-                <img src="../image/logo.png" alt="Logo Kelurahan">
-                <span>Way Urang</span>
+                    <img src="../image/logo.png" alt="Logo Kelurahan">
+                    <span>Way Urang</span>
                 </a>
             </div>
             <nav>
