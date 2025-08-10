@@ -26,6 +26,7 @@
         /* ================= HERO SECTION ================= */
         .hero-section {
             height: 100vh;
+            min-height: 600px;
             background:
                 linear-gradient(rgba(181, 101, 29, 0.4), rgba(139, 69, 19, 0.4)),
                 url(../image/Kedu/kedu\ \(7\).JPG) center/cover;
@@ -60,12 +61,9 @@
         }
 
         @keyframes sway {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: rotate(-15deg) translateY(0px);
             }
-
             50% {
                 transform: rotate(-10deg) translateY(-10px);
             }
@@ -121,19 +119,12 @@
         }
 
         @keyframes bounce {
-
-            0%,
-            20%,
-            50%,
-            80%,
-            100% {
+            0%, 20%, 50%, 80%, 100% {
                 transform: translateX(-50%) translateY(0);
             }
-
             40% {
                 transform: translateX(-50%) translateY(-10px);
             }
-
             60% {
                 transform: translateX(-50%) translateY(-5px);
             }
@@ -174,7 +165,7 @@
         }
 
         .about-image {
-            background: url('../image/Kedu/kedu\ \(8\).JPG');
+            background: url('../image/Kedu/kedu\ \(6\).JPG');
             background-size: cover;
             height: 400px;
             border-radius: 20px;
@@ -785,8 +776,7 @@
         }
 
         .social-media a.social-link-instagram:hover svg {
-            filter:
-                sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
+            filter: sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
         }
 
         .social-media a.social-link-instagram:active {
@@ -795,12 +785,42 @@
         }
 
         .social-media a.social-link-instagram:active svg {
-            filter:
-                sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
+            filter: sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
         }
 
+        /* FIXED: Map and address alignment */
         .map-container {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            display: inline-block; /* Make container fit content */
+            width: auto; /* Let it size naturally */
+        }
+
+        .map-container iframe {
+            width: 360px; /* Set specific width to match your image */
+            height: 160px;
+            border: 0;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* FIXED: Address styling to match map width exactly */
+        .address {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 360px; /* Same width as iframe */
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .address p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #e2e8f0;
+            margin: 0;
+            font-weight: 400;
         }
 
         .map-placeholder {
@@ -824,22 +844,6 @@
         .map-placeholder:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 40px rgba(181, 101, 29, 0.2);
-        }
-
-        .address {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 20px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .address p {
-            font-size: 14px;
-            line-height: 1.7;
-            color: #e6d7c5;
-            margin: 0;
-            font-weight: 400;
         }
 
         .visitor-stats {
@@ -909,64 +913,225 @@
             color: white;
         }
 
-        @media (max-width: 768px) {
+        /* ================= RESPONSIVE STYLES ================= */
+        @media (max-width: 1200px) {
             .hero-title {
-                font-size: 3em;
+                font-size: 4em;
             }
+            
+            .about-container {
+                gap: 50px;
+            }
+            
+            .features-grid {
+                gap: 30px;
+            }
+            
+            .gallery-grid {
+                grid-auto-rows: 240px;
+            }
+        }
 
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 3.5em;
+            }
+            
+            .hero-description {
+                font-size: 1.1em;
+            }
+            
             .about-container {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
-
+            
+            .about-image {
+                height: 350px;
+                order: -1;
+            }
+            
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
             }
-
-            .footer-container {
-                flex-direction: column;
-                gap: 40px;
-                padding: 0 20px 30px 20px;
-            }
-
-            .footer-bottom-content {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-                padding: 0 20px;
-            }
-
-            .footer-column h3 {
-                font-size: 18px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
+            
             .gallery-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
-
-            .info-stats {
+            
+            .contact-info {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 30px;
             }
-        }
-
-        @media (max-width: 1024px) {
+            
             .footer-container {
                 flex-wrap: wrap;
                 gap: 40px;
             }
+            
+            .footer-column {
+                min-width: 45%;
+            }
         }
 
-        /* Scroll animation trigger */
-        .footer.animate .footer-column {
-            animation-play-state: running;
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 500px;
+            }
+            
+            .hero-title {
+                font-size: 3em;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1em;
+            }
+            
+            .about-content h2,
+            .gallery-title,
+            .features-title,
+            .contact-title {
+                font-size: 2.5em;
+            }
+            
+            .palm-decoration {
+                font-size: 6em;
+            }
+            
+            .gallery-grid {
+                grid-auto-rows: 200px;
+            }
+            
+            .feature-item {
+                padding: 30px 15px;
+            }
+            
+            .feature-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2em;
+            }
+            
+            .info-title {
+                font-size: 2.2em;
+            }
+            
+            .info-description {
+                font-size: 1.1em;
+            }
+            
+            .footer-column {
+                min-width: 100%;
+            }
+            
+            iframe {
+                width: 100%;
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2.5em;
+            }
+            
+            .hero-description {
+                font-size: 1em;
+                margin-bottom: 30px;
+            }
+            
+            .about-content h2,
+            .gallery-title,
+            .features-title,
+            .contact-title,
+            .info-title {
+                font-size: 2em;
+            }
+            
+            .about-content p,
+            .feature-description,
+            .contact-item p {
+                font-size: 1em;
+            }
+            
+            .palm-decoration {
+                font-size: 4em;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 250px;
+            }
+            
+            .info-stats {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .stat-number {
+                font-size: 2.5em;
+            }
+            
+            .ticket-card {
+                flex: 1 1 100%;
+            }
+            
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            iframe {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .hero-title {
+                font-size: 2em;
+            }
+            
+            .hero-subtitle {
+                font-size: 1em;
+                letter-spacing: 2px;
+            }
+            
+            .back-button {
+                top: 20px;
+                left: 20px;
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+            
+            .about-content h2,
+            .gallery-title,
+            .features-title,
+            .contact-title,
+            .info-title {
+                font-size: 1.8em;
+            }
+            
+            .about-image {
+                height: 250px;
+            }
+            
+            .gallery-grid {
+                grid-auto-rows: 200px;
+            }
+            
+            .feature-title {
+                font-size: 1.2em;
+            }
+            
+            .footer-column h3 {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">

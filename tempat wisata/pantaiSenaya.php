@@ -60,9 +60,12 @@
         }
 
         @keyframes sway {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: rotate(-15deg) translateY(0px);
             }
+
             50% {
                 transform: rotate(-10deg) translateY(-10px);
             }
@@ -118,12 +121,19 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateX(-50%) translateY(0);
             }
+
             40% {
                 transform: translateX(-50%) translateY(-10px);
             }
+
             60% {
                 transform: translateX(-50%) translateY(-5px);
             }
@@ -584,7 +594,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 30px;
-            display: grid;
+            display: flex;
             grid-template-columns: 1fr;
             gap: 50px;
             position: relative;
@@ -624,12 +634,15 @@
 
         .map-container {
             margin-bottom: 15px;
-            display: inline-block; /* Make container fit content */
-            width: auto; /* Let it size naturally */
+            display: inline-block;
+            /* Make container fit content */
+            width: auto;
+            /* Let it size naturally */
         }
 
         .map-container iframe {
-            width: 360px; /* Set specific width to match your image */
+            width: 360px;
+            /* Set specific width to match your image */
             height: 160px;
             border: 0;
             border-radius: 10px;
@@ -643,7 +656,8 @@
             border-radius: 10px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            width: 360px; /* Same width as iframe */
+            width: 360px;
+            /* Same width as iframe */
             box-sizing: border-box;
             margin: 0;
         }
@@ -751,6 +765,7 @@
 
         /* ================= RESPONSIVE DESIGN ================= */
         @media (max-width: 1200px) {
+
             .about-container,
             .gallery-container,
             .features-container,
@@ -758,7 +773,7 @@
             .contact-container {
                 padding: 0 20px;
             }
-            
+
             .features-grid {
                 grid-template-columns: repeat(3, 1fr);
                 gap: 30px;
@@ -769,7 +784,7 @@
             .hero-title {
                 font-size: 4em;
             }
-            
+
             .about-container {
                 grid-template-columns: 1fr;
                 gap: 50px;
@@ -779,17 +794,17 @@
             .about-image {
                 order: -1;
             }
-            
+
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 25px;
             }
-            
+
             .gallery-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
             }
-            
+
             .gallery-item.hero,
             .gallery-item.hero1,
             .gallery-item.large,
@@ -814,37 +829,37 @@
                 font-size: 3.5em;
                 letter-spacing: 2px;
             }
-            
+
             .hero-subtitle {
                 font-size: 1.1em;
                 letter-spacing: 2px;
             }
-            
+
             .hero-description {
                 font-size: 1.1em;
             }
-            
+
             .about-content h2,
             .gallery-title,
             .features-title,
             .contact-title {
                 font-size: 2.5em;
             }
-            
+
             .info-title {
                 font-size: 2.2em;
             }
-            
+
             .features-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
-            
+
             .gallery-grid {
                 grid-template-columns: 1fr;
                 gap: 15px;
             }
-            
+
             .gallery-item.hero,
             .gallery-item.hero1,
             .gallery-item.large,
@@ -853,7 +868,7 @@
                 grid-column: span 1;
                 grid-row: span 1;
             }
-            
+
             .info-stats {
                 grid-template-columns: 1fr;
                 gap: 30px;
@@ -868,9 +883,14 @@
 
             /* Footer mobile layout */
             .footer-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 30px;
+                display: flex;
                 grid-template-columns: 1fr;
-                gap: 40px;
-                text-align: left;
+                gap: 50px;
+                position: relative;
+                z-index: 1;
             }
 
             .footer-section h3::after {
@@ -902,11 +922,11 @@
                 font-size: 2.8em;
                 letter-spacing: 1px;
             }
-            
+
             .hero-content {
                 padding: 0 15px;
             }
-            
+
             .about-section,
             .gallery-section,
             .features-section,
@@ -914,28 +934,28 @@
             .contact-section {
                 padding: 80px 0;
             }
-            
+
             .about-content h2,
             .gallery-title,
             .features-title,
             .contact-title {
                 font-size: 2.2em;
             }
-            
+
             .info-title {
                 font-size: 2em;
             }
-            
+
             .feature-item {
                 padding: 30px 15px;
             }
-            
+
             .feature-icon {
                 width: 80px;
                 height: 80px;
                 font-size: 2em;
             }
-            
+
             .stat-number {
                 font-size: 2.5em;
             }
@@ -945,8 +965,14 @@
             }
 
             .footer-container {
-                padding: 0 20px;
-                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 30px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 50px;
+                position: relative;
+                z-index: 1;
             }
 
             .map-container {
@@ -967,18 +993,29 @@
             .hero-title {
                 font-size: 2.5em;
             }
-            
+
             .palm-decoration {
                 font-size: 6em;
             }
-            
+
+            .footer-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 30px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 50px;
+                position: relative;
+                z-index: 1;
+            }
+
             .about-content h2,
             .gallery-title,
             .features-title,
             .contact-title {
                 font-size: 2em;
             }
-            
+
             .ticket-card {
                 flex: 1 1 100%;
             }
@@ -994,6 +1031,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -1004,9 +1042,17 @@
             animation: fadeInUp 0.6s ease forwards;
         }
 
-        .footer-section:nth-child(1) { animation-delay: 0.1s; }
-        .footer-section:nth-child(2) { animation-delay: 0.2s; }
-        .footer-section:nth-child(3) { animation-delay: 0.3s; }
+        .footer-section:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .footer-section:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .footer-section:nth-child(3) {
+            animation-delay: 0.3s;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1323,7 +1369,9 @@
                     entry.target.classList.add('animate');
                 }
             });
-        }, { threshold: 0.1 });
+        }, {
+            threshold: 0.1
+        });
 
         const footer = document.querySelector('.footer');
         if (footer) {

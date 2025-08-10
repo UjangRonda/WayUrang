@@ -534,7 +534,7 @@
         .features-title,
         .info-title,
         .about-content h2 {
-            color: #4A9FA0;
+            color: #41fcffff;
         }
 
         .feature-icon {
@@ -1036,7 +1036,7 @@
             <p class="gallery-subtitle">Jelajahi keindahan Pantai Sanggar melalui koleksi foto menawan</p>
 
             <div class="gallery-grid">
-                <div class="gallery-item large">
+                <div class="gallery-item">
                     <img src="../image/sanggar/sanggar (3).JPG" alt="Pantai Sanggar">
                 </div>
                 <div class="gallery-item">
@@ -1050,6 +1050,9 @@
                 </div>
                 <div class="gallery-item">
                     <img src="../image/sanggar/sanggar (4).JPG" alt="Pantai Sanggar">
+                </div>
+                <div class="gallery-item">
+                    <img src="../image/sanggar/sanggar (8).JPG" alt="Pantai Sanggar">
                 </div>
             </div>
         </div>

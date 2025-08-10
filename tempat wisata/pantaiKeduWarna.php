@@ -899,21 +899,64 @@
             color: #D9B48F;
         }
 
-        @media (max-width: 768px) {
+        /* RESPONSIVE BREAKPOINTS */
+        @media (max-width: 1200px) {
             .hero-title {
-                font-size: 3em;
+                font-size: 4.5em;
             }
-
+            
             .about-container {
-                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+            
+            .features-grid {
+                gap: 30px;
+            }
+            
+            .footer-container {
+                flex-wrap: wrap;
                 gap: 40px;
             }
+        }
 
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 4em;
+            }
+            
+            .hero-description {
+                font-size: 1.1em;
+            }
+            
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            
+            .about-content h2 {
+                font-size: 2.5em;
+                text-align: center;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
+                gap: 30px;
             }
-
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .ticket-card {
+                flex: 1 1 100%;
+                max-width: 400px;
+            }
+            
             .footer-container {
                 flex-direction: column;
                 gap: 40px;
@@ -932,25 +975,540 @@
             }
         }
 
-        @media (max-width: 480px) {
-            .features-grid {
-                grid-template-columns: 1fr;
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 3em;
+                letter-spacing: 2px;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1em;
+                letter-spacing: 2px;
+            }
+            
+            .hero-description {
+                font-size: 1em;
+                padding: 0 10px;
+            }
+            
+            .back-button {
+                top: 20px;
+                left: 20px;
+                padding: 8px 16px;
+                font-size: 0.9em;
             }
 
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 20px;
+            }
+            
+            .about-content h2 {
+                font-size: 2.2em;
+            }
+            
+            .about-image {
+                height: 300px;
+            }
+
+            .gallery-container {
+                padding: 0 20px;
+            }
+            
+            .gallery-title {
+                font-size: 2.5em;
+            }
+            
+            .gallery-subtitle {
+                font-size: 1em;
+            }
+            
             .gallery-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .gallery-item.large {
+                grid-column: span 1;
+                height: 250px;
+                font-size: 3em;
+            }
+            
+            .gallery-item {
+                height: 200px;
             }
 
+            .features-container {
+                padding: 0 20px;
+            }
+            
+            .features-title {
+                font-size: 2.5em;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .feature-item {
+                padding: 30px 20px;
+            }
+            
+            .feature-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2em;
+            }
+            
+            .feature-title {
+                font-size: 1.2em;
+            }
+
+            .info-container {
+                padding: 0 20px;
+            }
+            
+            .info-title {
+                font-size: 2.2em;
+            }
+            
+            .info-description {
+                font-size: 1.1em;
+            }
+            
             .info-stats {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 30px;
+            }
+            
+            .stat-number {
+                font-size: 2.5em;
+            }
+
+            .contact-container {
+                padding: 0 20px;
+            }
+            
+            .contact-title {
+                font-size: 2.2em;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .contact-item {
+                padding: 25px 20px;
+            }
+            
+            .contact-item h3 {
+                font-size: 1.1em;
+            }
+            
+            .social-icons-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+            }
+            
+            .ticket-info {
+                margin: 30px auto 0 auto;
+                padding: 25px 20px;
+            }
+            
+            .ticket-info h3 {
+                font-size: 1.5em;
+            }
+            
+            .ticket-card {
+                padding: 15px;
+            }
+            
+            .ticket-card h4 {
+                font-size: 1.1em;
+            }
+
+            .location-section {
+                margin: 60px 0;
+            }
+            
+            .location-section iframe {
+                height: 300px;
+                border-radius: 10px;
+            }
+
+            .footer {
+                padding: 40px 0 0 0;
+            }
+            
+            .footer-container {
+                flex-direction: column;
+                gap: 30px;
+                padding: 0 20px 30px 20px;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 0 20px;
+                font-size: 12px;
+            }
+
+            .footer-column {
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .footer-column h3 {
+                font-size: 16px;
+            }
+            
+            .footer-column h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .social-media {
+                width: 100%;
+                justify-content: center;
             }
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.5em;
+                line-height: 1.2;
+            }
+            
+            .hero-subtitle {
+                font-size: 1em;
+                letter-spacing: 1px;
+            }
+            
+            .hero-description {
+                font-size: 0.95em;
+                line-height: 1.6;
+            }
+            
+            .back-button {
+                top: 15px;
+                left: 15px;
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+
+            .about-section {
+                padding: 80px 0;
+            }
+            
+            .about-container {
+                padding: 0 15px;
+                gap: 30px;
+            }
+            
+            .about-content h2 {
+                font-size: 1.8em;
+            }
+            
+            .about-content p {
+                font-size: 1em;
+            }
+            
+            .about-image {
+                height: 250px;
+            }
+
+            .gallery-section {
+                padding: 80px 0;
+            }
+            
+            .gallery-container {
+                padding: 0 15px;
+            }
+            
+            .gallery-title {
+                font-size: 2em;
+            }
+            
+            .gallery-subtitle {
+                font-size: 0.9em;
+                margin-bottom: 40px;
+            }
+            
+            .gallery-item {
+                height: 180px;
+            }
+            
+            .gallery-item.large {
+                height: 200px;
+                font-size: 2.5em;
+            }
+
+            .features-section {
+                padding: 80px 0;
+            }
+            
+            .features-container {
+                padding: 0 15px;
+            }
+            
+            .features-title {
+                font-size: 2em;
+                margin-bottom: 40px;
+            }
+            
+            .features-grid {
+                gap: 20px;
+            }
+            
+            .feature-item {
+                padding: 25px 15px;
+            }
+            
+            .feature-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            
+            .feature-title {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+            
+            .feature-description {
+                font-size: 0.9em;
+            }
+
+            .info-section {
+                padding: 80px 0;
+            }
+            
+            .info-container {
+                padding: 0 15px;
+            }
+            
+            .info-title {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            
+            .info-description {
+                font-size: 1em;
+                margin-bottom: 40px;
+            }
+            
+            .info-stats {
+                gap: 20px;
+                margin-top: 40px;
+            }
+            
+            .stat-number {
+                font-size: 2em;
+            }
+            
+            .stat-label {
+                font-size: 0.9em;
+            }
+
+            .contact-section {
+                padding: 80px 0;
+            }
+            
+            .contact-container {
+                padding: 0 15px;
+            }
+            
+            .contact-title {
+                font-size: 1.8em;
+                margin-bottom: 30px;
+            }
+            
+            .contact-info {
+                gap: 20px;
+            }
+            
+            .contact-item {
+                padding: 20px 15px;
+            }
+            
+            .contact-item h3 {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+            
+            .contact-item p {
+                font-size: 0.9em;
+            }
+            
+            .social-icons-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            
+            .icon-box {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .icon-box img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .ticket-info {
+                margin: 20px auto 0 auto;
+                padding: 20px 15px;
+            }
+            
+            .ticket-info h3 {
+                font-size: 1.3em;
+                margin-bottom: 20px;
+            }
+            
+            .ticket-card {
+                padding: 15px 10px;
+            }
+            
+            .ticket-card h4 {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+            
+            .ticket-card ul li {
+                font-size: 0.9em;
+                padding: 4px 0;
+            }
+
+            .location-section {
+                margin: 40px 0;
+            }
+            
+            .location-section iframe {
+                height: 250px;
+                width: 100%;
+            }
+
+            .footer {
+                padding: 30px 0 0 0;
+            }
+            
             .footer-container {
-                flex-wrap: wrap;
-                gap: 40px;
+                padding: 0 15px 20px 15px;
+                gap: 25px;
+            }
+            
+            .footer-column h3 {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            
+            .footer-column ul li a {
+                font-size: 12px;
+            }
+            
+            .social-media a {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .address {
+                padding: 15px;
+            }
+            
+            .address p {
+                font-size: 12px;
+            }
+            
+            .visitor-stats {
+                padding: 20px;
+            }
+            
+            .stat-row {
+                font-size: 12px;
+            }
+            
+            .stat-row span:last-child {
+                font-size: 14px;
+            }
+
+            .footer-bottom {
+                padding: 20px 0;
+            }
+            
+            .footer-bottom-content {
+                padding: 0 15px;
+                font-size: 11px;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero-title {
+                font-size: 2.2em;
+            }
+            
+            .hero-description {
+                font-size: 0.9em;
+            }
+            
+            .about-content h2 {
+                font-size: 1.6em;
+            }
+            
+            .gallery-title {
+                font-size: 1.8em;
+            }
+            
+            .features-title {
+                font-size: 1.8em;
+            }
+            
+            .info-title {
+                font-size: 1.6em;
+            }
+            
+            .contact-title {
+                font-size: 1.6em;
+            }
+            
+            .feature-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5em;
+            }
+            
+            .gallery-item {
+                height: 160px;
+            }
+            
+            .gallery-item.large {
+                height: 180px;
+                font-size: 2em;
+            }
+            
+            .contact-item {
+                padding: 15px 10px;
+            }
+            
+            .ticket-info {
+                padding: 15px 10px;
+            }
+            
+            .ticket-card {
+                padding: 12px 8px;
+            }
+            
+            .footer-column h3 {
+                font-size: 13px;
+            }
+            
+            .footer-column ul li a {
+                font-size: 11px;
             }
         }
 
