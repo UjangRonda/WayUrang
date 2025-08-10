@@ -441,8 +441,11 @@
             box-shadow: 0 8px 32px rgba(0, 102, 204, 0.3);
         }
 
-        .dropdown:hover .dropdown-menu {
-            display: block;
+        /* Desktop hover hanya untuk layar besar */
+        @media (min-width: 769px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
         }
 
         .dropdown-menu a {
@@ -515,17 +518,18 @@
             .nav-links {
                 position: fixed;
                 top: 70px;
-                right: -50%;
-                width: 50%;
+                right: -60%;
+                width: 60%;
                 height: calc(100vh - 70px);
                 background: rgba(0, 102, 204, 0.95);
                 backdrop-filter: blur(15px);
                 flex-direction: column;
                 justify-content: flex-start;
-                align-items: center;
-                padding-top: 30px;
+                align-items: stretch;
+                padding: 20px 0;
                 transition: right 0.3s ease;
                 gap: 0;
+                overflow-y: auto;
             }
 
             .nav-links.active {
@@ -533,33 +537,73 @@
             }
 
             .navbar.scrolled .nav-links {
-                background: rgba(255, 255, 255, 0.95);
+                background: rgba(0, 102, 204, 0.95);
             }
 
-            .nav-links a {
-                width: 80%;
-                margin: 8px 0;
+            .nav-links>a,
+            .nav-links>.dropdown {
+                width: 100%;
+                margin: 0;
+            }
+
+            .nav-links>a {
                 padding: 15px 20px;
-                text-align: center;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-                border-radius: 8px;
+                text-align: left;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                color: #fff !important;
+                font-weight: 500;
+                display: block;
+                text-decoration: none;
             }
 
-            .navbar.scrolled .nav-links a {
-                color: #0066cc;
-                border-bottom: 1px solid rgba(0, 102, 204, 0.2);
+            .nav-links>a:hover {
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff !important;
+            }
+
+            /* Dropdown styling untuk mobile */
+            .dropdown {
+                width: 100%;
+            }
+
+            .dropdown>a {
+                padding: 15px 20px;
+                text-align: left;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                color: #fff !important;
+                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .dropdown>a:hover {
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff !important;
+            }
+
+            .dropdown>a::after {
+                content: "▼";
+                font-size: 0.8em;
+                transition: transform 0.3s ease;
+            }
+
+            .dropdown.active>a::after {
+                transform: rotate(180deg);
             }
 
             .dropdown-menu {
                 position: static;
                 display: none;
                 width: 100%;
-                background: rgba(0, 0, 0, 0.2);
+                background: rgba(0, 0, 0, 0.3);
                 box-shadow: none;
                 border-radius: 0;
-                margin-top: 0;
-                max-height: 200px;
-                overflow-y: auto;
+                margin: 0;
+                padding: 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
 
             .dropdown.active .dropdown-menu {
@@ -568,20 +612,23 @@
 
             .dropdown-menu a {
                 background: transparent !important;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                font-size: 0.85em;
-                padding: 10px 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                font-size: 0.9em;
+                padding: 12px 40px;
+                color: rgba(255, 255, 255, 0.9) !important;
+                font-weight: 400;
+                text-align: left;
+                display: block;
+                text-decoration: none;
             }
 
-            .navbar.scrolled .dropdown-menu a {
-                background: transparent !important;
-                border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+            .dropdown-menu a:hover {
+                background: rgba(255, 255, 255, 0.1) !important;
+                color: #fff !important;
             }
 
-            .dropdown>a::after {
-                content: " ▼";
-                font-size: 0.7em;
-                margin-left: 5px;
+            .dropdown-menu a:last-child {
+                border-bottom: none;
             }
 
             .nav-container {
@@ -1395,16 +1442,24 @@
             }
         });
 
-        // Mobile menu toggle
+        // Mobile menu toggle - DIPERBAIKI
         document.addEventListener("DOMContentLoaded", function() {
             const hamburger = document.getElementById("hamburger");
             const navLinks = document.getElementById("navLinks");
-            const dropdowns = document.querySelectorAll(".dropdown > a");
+            const dropdowns = document.querySelectorAll(".dropdown");
 
+            // Toggle hamburger menu
             hamburger.addEventListener("click", (e) => {
                 e.preventDefault();
                 hamburger.classList.toggle("active");
                 navLinks.classList.toggle("active");
+
+                // Tutup semua dropdown saat menu utama ditutup
+                if (!navLinks.classList.contains("active")) {
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove("active");
+                    });
+                }
             });
 
             // Close menu when clicking outside
@@ -1412,26 +1467,68 @@
                 if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
                     hamburger.classList.remove("active");
                     navLinks.classList.remove("active");
+                    // Tutup semua dropdown
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove("active");
+                    });
                 }
             });
 
-            // Dropdown functionality for mobile
-            dropdowns.forEach(link => {
-                link.addEventListener("click", function(e) {
-                    if (window.innerWidth <= 768) {
+            // PERBAIKAN UTAMA: Dropdown functionality untuk mobile
+            dropdowns.forEach(dropdown => {
+                const dropdownLink = dropdown.querySelector('a');
+
+                dropdownLink.addEventListener("click", function(e) {
+                    // Hanya aktif di mobile dan saat hamburger menu terbuka
+                    if (window.innerWidth <= 768 && navLinks.classList.contains("active")) {
                         e.preventDefault();
-                        this.parentElement.classList.toggle("active");
+
+                        // Tutup dropdown lain terlebih dahulu
+                        dropdowns.forEach(otherDropdown => {
+                            if (otherDropdown !== dropdown) {
+                                otherDropdown.classList.remove("active");
+                            }
+                        });
+
+                        // Toggle dropdown yang diklik
+                        dropdown.classList.toggle("active");
                     }
                 });
             });
 
-            // Close menu when clicking nav links
-            const navLinksItems = document.querySelectorAll('.nav-links a:not(.dropdown > a)');
-            navLinksItems.forEach(link => {
+            // Close menu when clicking nav links (bukan dropdown)
+            const directNavLinks = document.querySelectorAll('.nav-links > a:not(.dropdown a)');
+            directNavLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     hamburger.classList.remove("active");
                     navLinks.classList.remove("active");
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove("active");
+                    });
                 });
+            });
+
+            // Close menu when clicking dropdown menu items
+            const dropdownMenuLinks = document.querySelectorAll('.dropdown-menu a');
+            dropdownMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove("active");
+                    navLinks.classList.remove("active");
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove("active");
+                    });
+                });
+            });
+
+            // Reset dropdown state saat window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove("active");
+                    });
+                    hamburger.classList.remove("active");
+                    navLinks.classList.remove("active");
+                }
             });
         });
 
