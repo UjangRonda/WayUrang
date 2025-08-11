@@ -744,7 +744,7 @@
 
         .social-media {
             width: 160px;
-            display: grid;
+            display: flex;
             grid-auto-flow: column;
             gap: 10px;
         }
@@ -764,8 +764,29 @@
 
         .social-media a:hover {
             background: #ffffff;
-            color: #F26B1D;
+            color: #1061efff;
             transform: translateY(-3px);
+        }
+
+        /* CSS Instagram dengan efek gradient menggunakan filter */
+        .social-media a.social-link-instagram:hover {
+            background: #ffffff !important;
+            transform: translateY(-3px);
+        }
+
+        .social-media a.social-link-instagram:hover svg {
+            filter:
+                sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
+        }
+
+        .social-media a.social-link-instagram:active {
+            background: #ffffff !important;
+            transform: translateY(-1px);
+        }
+
+        .social-media a.social-link-instagram:active svg {
+            filter:
+                sepia(1) hue-rotate(290deg) saturate(3) brightness(1.2) !important;
         }
 
         .map-container {
@@ -878,21 +899,64 @@
             color: #D9B48F;
         }
 
-        @media (max-width: 768px) {
+        /* RESPONSIVE BREAKPOINTS */
+        @media (max-width: 1200px) {
             .hero-title {
-                font-size: 3em;
+                font-size: 4.5em;
             }
-
+            
             .about-container {
-                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+            
+            .features-grid {
+                gap: 30px;
+            }
+            
+            .footer-container {
+                flex-wrap: wrap;
                 gap: 40px;
             }
+        }
 
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 4em;
+            }
+            
+            .hero-description {
+                font-size: 1.1em;
+            }
+            
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            
+            .about-content h2 {
+                font-size: 2.5em;
+                text-align: center;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
+                gap: 30px;
             }
-
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .ticket-card {
+                flex: 1 1 100%;
+                max-width: 400px;
+            }
+            
             .footer-container {
                 flex-direction: column;
                 gap: 40px;
@@ -911,25 +975,540 @@
             }
         }
 
-        @media (max-width: 480px) {
-            .features-grid {
-                grid-template-columns: 1fr;
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 3em;
+                letter-spacing: 2px;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1em;
+                letter-spacing: 2px;
+            }
+            
+            .hero-description {
+                font-size: 1em;
+                padding: 0 10px;
+            }
+            
+            .back-button {
+                top: 20px;
+                left: 20px;
+                padding: 8px 16px;
+                font-size: 0.9em;
             }
 
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 20px;
+            }
+            
+            .about-content h2 {
+                font-size: 2.2em;
+            }
+            
+            .about-image {
+                height: 300px;
+            }
+
+            .gallery-container {
+                padding: 0 20px;
+            }
+            
+            .gallery-title {
+                font-size: 2.5em;
+            }
+            
+            .gallery-subtitle {
+                font-size: 1em;
+            }
+            
             .gallery-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .gallery-item.large {
+                grid-column: span 1;
+                height: 250px;
+                font-size: 3em;
+            }
+            
+            .gallery-item {
+                height: 200px;
             }
 
+            .features-container {
+                padding: 0 20px;
+            }
+            
+            .features-title {
+                font-size: 2.5em;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .feature-item {
+                padding: 30px 20px;
+            }
+            
+            .feature-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2em;
+            }
+            
+            .feature-title {
+                font-size: 1.2em;
+            }
+
+            .info-container {
+                padding: 0 20px;
+            }
+            
+            .info-title {
+                font-size: 2.2em;
+            }
+            
+            .info-description {
+                font-size: 1.1em;
+            }
+            
             .info-stats {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 30px;
+            }
+            
+            .stat-number {
+                font-size: 2.5em;
+            }
+
+            .contact-container {
+                padding: 0 20px;
+            }
+            
+            .contact-title {
+                font-size: 2.2em;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .contact-item {
+                padding: 25px 20px;
+            }
+            
+            .contact-item h3 {
+                font-size: 1.1em;
+            }
+            
+            .social-icons-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+            }
+            
+            .ticket-info {
+                margin: 30px auto 0 auto;
+                padding: 25px 20px;
+            }
+            
+            .ticket-info h3 {
+                font-size: 1.5em;
+            }
+            
+            .ticket-card {
+                padding: 15px;
+            }
+            
+            .ticket-card h4 {
+                font-size: 1.1em;
+            }
+
+            .location-section {
+                margin: 60px 0;
+            }
+            
+            .location-section iframe {
+                height: 300px;
+                border-radius: 10px;
+            }
+
+            .footer {
+                padding: 40px 0 0 0;
+            }
+            
+            .footer-container {
+                flex-direction: column;
+                gap: 30px;
+                padding: 0 20px 30px 20px;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 0 20px;
+                font-size: 12px;
+            }
+
+            .footer-column {
+                max-width: 100%;
+                text-align: center;
+            }
+            
+            .footer-column h3 {
+                font-size: 16px;
+            }
+            
+            .footer-column h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .social-media {
+                width: 100%;
+                justify-content: center;
             }
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.5em;
+                line-height: 1.2;
+            }
+            
+            .hero-subtitle {
+                font-size: 1em;
+                letter-spacing: 1px;
+            }
+            
+            .hero-description {
+                font-size: 0.95em;
+                line-height: 1.6;
+            }
+            
+            .back-button {
+                top: 15px;
+                left: 15px;
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+
+            .about-section {
+                padding: 80px 0;
+            }
+            
+            .about-container {
+                padding: 0 15px;
+                gap: 30px;
+            }
+            
+            .about-content h2 {
+                font-size: 1.8em;
+            }
+            
+            .about-content p {
+                font-size: 1em;
+            }
+            
+            .about-image {
+                height: 250px;
+            }
+
+            .gallery-section {
+                padding: 80px 0;
+            }
+            
+            .gallery-container {
+                padding: 0 15px;
+            }
+            
+            .gallery-title {
+                font-size: 2em;
+            }
+            
+            .gallery-subtitle {
+                font-size: 0.9em;
+                margin-bottom: 40px;
+            }
+            
+            .gallery-item {
+                height: 180px;
+            }
+            
+            .gallery-item.large {
+                height: 200px;
+                font-size: 2.5em;
+            }
+
+            .features-section {
+                padding: 80px 0;
+            }
+            
+            .features-container {
+                padding: 0 15px;
+            }
+            
+            .features-title {
+                font-size: 2em;
+                margin-bottom: 40px;
+            }
+            
+            .features-grid {
+                gap: 20px;
+            }
+            
+            .feature-item {
+                padding: 25px 15px;
+            }
+            
+            .feature-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            
+            .feature-title {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+            
+            .feature-description {
+                font-size: 0.9em;
+            }
+
+            .info-section {
+                padding: 80px 0;
+            }
+            
+            .info-container {
+                padding: 0 15px;
+            }
+            
+            .info-title {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            
+            .info-description {
+                font-size: 1em;
+                margin-bottom: 40px;
+            }
+            
+            .info-stats {
+                gap: 20px;
+                margin-top: 40px;
+            }
+            
+            .stat-number {
+                font-size: 2em;
+            }
+            
+            .stat-label {
+                font-size: 0.9em;
+            }
+
+            .contact-section {
+                padding: 80px 0;
+            }
+            
+            .contact-container {
+                padding: 0 15px;
+            }
+            
+            .contact-title {
+                font-size: 1.8em;
+                margin-bottom: 30px;
+            }
+            
+            .contact-info {
+                gap: 20px;
+            }
+            
+            .contact-item {
+                padding: 20px 15px;
+            }
+            
+            .contact-item h3 {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+            
+            .contact-item p {
+                font-size: 0.9em;
+            }
+            
+            .social-icons-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            
+            .icon-box {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .icon-box img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .ticket-info {
+                margin: 20px auto 0 auto;
+                padding: 20px 15px;
+            }
+            
+            .ticket-info h3 {
+                font-size: 1.3em;
+                margin-bottom: 20px;
+            }
+            
+            .ticket-card {
+                padding: 15px 10px;
+            }
+            
+            .ticket-card h4 {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+            
+            .ticket-card ul li {
+                font-size: 0.9em;
+                padding: 4px 0;
+            }
+
+            .location-section {
+                margin: 40px 0;
+            }
+            
+            .location-section iframe {
+                height: 250px;
+                width: 100%;
+            }
+
+            .footer {
+                padding: 30px 0 0 0;
+            }
+            
             .footer-container {
-                flex-wrap: wrap;
-                gap: 40px;
+                padding: 0 15px 20px 15px;
+                gap: 25px;
+            }
+            
+            .footer-column h3 {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            
+            .footer-column ul li a {
+                font-size: 12px;
+            }
+            
+            .social-media a {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .address {
+                padding: 15px;
+            }
+            
+            .address p {
+                font-size: 12px;
+            }
+            
+            .visitor-stats {
+                padding: 20px;
+            }
+            
+            .stat-row {
+                font-size: 12px;
+            }
+            
+            .stat-row span:last-child {
+                font-size: 14px;
+            }
+
+            .footer-bottom {
+                padding: 20px 0;
+            }
+            
+            .footer-bottom-content {
+                padding: 0 15px;
+                font-size: 11px;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero-title {
+                font-size: 2.2em;
+            }
+            
+            .hero-description {
+                font-size: 0.9em;
+            }
+            
+            .about-content h2 {
+                font-size: 1.6em;
+            }
+            
+            .gallery-title {
+                font-size: 1.8em;
+            }
+            
+            .features-title {
+                font-size: 1.8em;
+            }
+            
+            .info-title {
+                font-size: 1.6em;
+            }
+            
+            .contact-title {
+                font-size: 1.6em;
+            }
+            
+            .feature-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5em;
+            }
+            
+            .gallery-item {
+                height: 160px;
+            }
+            
+            .gallery-item.large {
+                height: 180px;
+                font-size: 2em;
+            }
+            
+            .contact-item {
+                padding: 15px 10px;
+            }
+            
+            .ticket-info {
+                padding: 15px 10px;
+            }
+            
+            .ticket-card {
+                padding: 12px 8px;
+            }
+            
+            .footer-column h3 {
+                font-size: 13px;
+            }
+            
+            .footer-column ul li a {
+                font-size: 11px;
             }
         }
 
@@ -998,7 +1577,7 @@
                 </div>
                 <div class="gallery-item">
                     <img src="../image/KeduWarna/IMG_4268.JPG"></img>
-                </div> 
+                </div>
                 <div class="gallery-item">
                     <img src="../image/KeduWarna/KeduWarna (7).JPG"></img>
                 </div>
@@ -1098,22 +1677,22 @@
                         Area Camping: 24 Jam
                     </p>
                 </div>
-                        <div class="contact-item">
-            <h3>📞 Kontak Informasi</h3>
-            <div class="social-icons-grid">
-                <a href="https://www.instagram.com/pantai_keduwarna/" target="_blank" class="icon-box ig" aria-label="Instagram">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-                </a>
-                <a href="https://www.tiktok.com/@pantai_keduwarna" target="_blank" class="icon-box tiktok" aria-label="TikTok">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=082184433334" target="_blank" class="icon-box wa" aria-label="WhatsApp">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
-                </a>
+                <div class="contact-item">
+                    <h3>📞 Kontak Informasi</h3>
+                    <div class="social-icons-grid">
+                        <a href="https://www.instagram.com/pantai_keduwarna/" target="_blank" class="icon-box ig" aria-label="Instagram">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/@pantai_keduwarna" target="_blank" class="icon-box tiktok" aria-label="TikTok">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=082184433334" target="_blank" class="icon-box wa" aria-label="WhatsApp">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+
             </div>
-            </div>
-            
-        </div>
             <!-- Harga Tiket Diletakkan Sendiri -->
             <div class="ticket-info">
                 <h3>💰 Harga Tiket</h3>
@@ -1155,10 +1734,11 @@
                 <div class="footer-column">
                     <h3>Navigasi</h3>
                     <ul class="footer-nav">
-                        <li><a href="#beranda">Beranda</a></li>
-                        <li><a href="#tentang">Tentang</a></li>
-                        <li><a href="#layanan">Layanan</a></li>
-                        <li><a href="#kontak">Kontak</a></li>
+                        <li><a href="../index.php">Beranda</a></li>
+                        <li><a href="../Tentang/sejarah.php">Sejarah</a></li>
+                        <li><a href="../Tentang/visiMisi.php">Visi Misi</a></li>
+                        <li><a href="../Tentang/strukturOrganisasi.php">Struktur Organisasi</a></li>
+                        <li><a href="potensiWisata.php">Potensi Wisata</a></li>
                     </ul>
                 </div>
 
@@ -1166,24 +1746,14 @@
                 <div class="footer-column">
                     <h3>Temukan kami di sosial media</h3>
                     <div class="social-media">
-                        <a href="#" class="social-link-instagram">
+                        <a href="https://www.instagram.com/kelurahan_wayurang/" class="social-link-instagram">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link-outube">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link-acebook">
+                        <a href="https://www.facebook.com/pages/Kantor%20Kelurahan%20Way%20Urang%20Kalianda/1700218406943437/#" class="social-link-acebook">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link-witter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                             </svg>
                         </a>
                     </div>
