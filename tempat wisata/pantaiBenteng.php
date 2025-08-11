@@ -968,13 +968,8 @@ body {
         display: inline-block;
         width: auto;
     }
-
-    .map-container iframe {
-        width: 360px;
-        height: 160px;
-        border: 0;
-        border-radius: 10px;
-        display: block;
+    .map-container {
+        width: 100%;
     }
 
     .social-media {
@@ -991,6 +986,10 @@ body {
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+    .location-section iframe{
+        width: 100%;
+        height: 240px;
     }
 }
 
@@ -1009,7 +1008,7 @@ body {
     }
     
     .info-stats {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1067,6 +1066,7 @@ body {
     
     .location-section iframe {
         height: 450px;
+        
     }
 }
 
@@ -1317,7 +1317,7 @@ body {
       <section class="location-section">
           <div class="contact-container">
               <h2 class="contact-title">📍 Lokasi & Akses</h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.8877299498427!2d105.5837375747771!3d-5.729307156622479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4111794bbf01d5%3A0xfea50084aa4be2ba!2sPantai%20Benteng%20Wayurang!5e0!3m2!1sen!2sid!4v1754494789211!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.8877299498427!2d105.5837375747771!3d-5.729307156622479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4111794bbf01d5%3A0xfea50084aa4be2ba!2sPantai%20Benteng%20Wayurang!5e0!3m2!1sen!2sid!4v1754494789211!5m2!1sen!2sid" width="600px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
       </section>
 
