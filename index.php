@@ -375,7 +375,6 @@
             margin-right: 8px;
         }
 
-<<<<<<< HEAD
 
         .navbar.scrolled {
             background-color: rgba(255, 255, 255, 0.95);
@@ -388,9 +387,6 @@
         }
 
         .nav-container {
-=======
-        .nav-logo a {
->>>>>>> 2acf5378e319e68e37b2f2c8d95fe04fe8060938
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -1277,7 +1273,6 @@
                 transition-duration: 0.01ms !important;
             }
         }
-<<<<<<< HEAD
 
         .wisata-card img {
             width: 100%;
@@ -1328,8 +1323,6 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 180, 216, 0.4);
         }
-=======
->>>>>>> 2acf5378e319e68e37b2f2c8d95fe04fe8060938
     </style>
 </head>
 
@@ -1407,7 +1400,6 @@
             </div>
         </div>
 
-<<<<<<< HEAD
             <!-- Chart Section -->
             <div class="chart-wrapper">
                 <div class="chart-box">
@@ -1418,12 +1410,6 @@
                     <h3>Distribusi Pekerjaan</h3>
                     <canvas id="jobChart"></canvas>
                 </div>
-=======
-        <div class="chart-wrapper">
-            <div class="chart-box">
-                <h3>Rasio Jenis Kelamin</h3>
-                <canvas id="genderChart"></canvas>
->>>>>>> 2acf5378e319e68e37b2f2c8d95fe04fe8060938
             </div>
     </section>
 
@@ -1436,19 +1422,6 @@
             <div class="wisata-card">
                 <img src="image/senaya/senaya (3).JPG" alt="Pantai Senaya">
                 <h3>Senaya Beach</h3>
-<<<<<<< HEAD
-                <p>Destinasi favorit warga lokal untuk menikmati pemandangan matahari terbenam dan angin pantai yang sejuk.</p>
-            </div>
-            <div class="wisata-card">
-                <img src="image/Aurora/Aurora (1).JPG" alt="Pantai Aurora">
-                <h3>Aurora Beach</h3>
-                <p>Terletak di balik perbukitan, pantai ini menawarkan suasana tenang dan cocok untuk berjalan santai atau berfoto.</p>
-            </div>
-            <div class="wisata-card">
-                <img src="image/sanggar-1.JPG" alt="Pantai Sanggar">
-                <h3>Sanggar Beach</h3>
-                <p>Pantai berpasir putih yang sering digunakan sebagai tempat edukasi alam dan kegiatan masyarakat lokal.</p>
-=======
                 <p>Pantai berpasir putih dengan suasana tenang, air jernih dan pemandangan matahari terbenam yang indah.</p>
             </div>
             <div class="wisata-card">
@@ -1460,7 +1433,6 @@
                 <img src="image/sanggar/sanggar (4).JPG" alt="Pantai Sanggar">
                 <h3>Sanggar Beach</h3>
                 <p>Pantai eksotis dengan pasir putih dan suasana tropis ala Bali, cocok untuk bersantai maupun berfoto.</p>
->>>>>>> 2acf5378e319e68e37b2f2c8d95fe04fe8060938
             </div>
 
         </div>
