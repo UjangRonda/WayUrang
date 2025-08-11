@@ -49,7 +49,7 @@
       color: inherit;
     }
 
-    /* ================= NAVBAR ================= */
+        /* ================= NAVBAR ================= */
     .navbar {
       position: fixed;
       top: 0;
@@ -58,7 +58,7 @@
       backdrop-filter: blur(15px);
       transition: all 0.4s ease;
       z-index: 1000;
-      padding: 15px 0;
+      padding: 12.5px 0;
     }
 
     .navbar::before {
@@ -79,21 +79,8 @@
       transform: translateY(0);
     }
 
-    .navbar.scrolled span {
-      font-weight: bold;
-      color: var(--primary-color);
-    }
-
-    .navbar.scrolled .dropdown-menu a {
-      background-color: #fff;
-    }
-
-    .navbar.scrolled nav a {
-      color: var(--primary-color);
-    }
-
     .nav-container {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -104,26 +91,32 @@
     .nav-logo {
       display: flex;
       align-items: center;
-      color: var(--primary-color);
-      font-size: 1.2rem;
+      color: #0066cc;
+      font-size: clamp(1em, 2.5vw, 1.2em);
       font-weight: 700;
       z-index: 1001;
     }
 
     .nav-logo img {
-      width: 40px;
-      height: auto;
-      margin-right: 10px;
+      height: 35px;
+      margin-right: 8px;
+    }
+
+    .nav-logo a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
     }
 
     .nav-logo span {
       font-weight: bold;
-      color: var(--light-text);
-      transition: color 0.3s;
+      color: #fff;
+      font-size: 1.2em;
     }
 
     .navbar.scrolled .nav-logo span {
-      color: var(--primary-color);
+      color: #0066cc;
     }
 
     .nav-links {
@@ -133,26 +126,26 @@
     }
 
     .nav-links a {
-      padding: 10px 15px;
-      color: var(--light-text);
+      padding: 15px 20px;
+      color: #fff;
       text-decoration: none;
       font-weight: 500;
-      font-size: 0.95rem;
-      transition: all 0.3s;
+      font-size: clamp(0.9em, 2vw, 1em);
+      transition: all 0.3s ease;
       border-radius: 8px;
     }
 
     .nav-links a:hover {
-      color: var(--light-text);
+      color: #ffffff;
       background: rgba(255, 255, 255, 0.1);
     }
 
     .navbar.scrolled .nav-links a {
-      color: var(--primary-color);
+      color: #0066cc;
     }
 
     .navbar.scrolled .nav-links a:hover {
-      color: var(--light-text);
+      color: #ffffff;
       background: rgba(0, 102, 204, 0.1);
     }
 

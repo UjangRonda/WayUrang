@@ -375,18 +375,7 @@
             margin-right: 8px;
         }
 
-
-        .navbar.scrolled {
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 8px 32px rgba(0, 102, 204, 0.15);
-        }
-
-        .navbar.scrolled nav a,
-        .navbar.scrolled span {
-            color: #0066cc;
-        }
-
-        .nav-container {
+        .nav-logo a {
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -1400,17 +1389,17 @@
             </div>
         </div>
 
-            <!-- Chart Section -->
-            <div class="chart-wrapper">
-                <div class="chart-box">
-                    <h3>Rasio Jenis Kelamin</h3>
-                    <canvas id="genderChart"></canvas>
-                </div>
-                <div class="chart-box">
-                    <h3>Distribusi Pekerjaan</h3>
-                    <canvas id="jobChart"></canvas>
-                </div>
+        <!-- Chart Section -->
+        <div class="chart-wrapper">
+            <div class="chart-box">
+                <h3>Rasio Jenis Kelamin</h3>
+                <canvas id="genderChart"></canvas>
             </div>
+            <div class="chart-box">
+                <h3>Distribusi Pekerjaan</h3>
+                <canvas id="jobChart"></canvas>
+            </div>
+        </div>
     </section>
 
     <section id="section-3" class="wisata">
