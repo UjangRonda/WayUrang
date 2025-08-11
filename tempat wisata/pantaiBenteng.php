@@ -474,6 +474,7 @@
               margin-bottom: 50px;
               font-weight: 800;
           }
+          
 
           .contact-info {
               display: grid;
@@ -1076,6 +1077,296 @@
               color: #333;
               line-height: 1.7;
           }
+          /* ================= RESPONSIVE DESIGN ================= */
+        @media (max-width: 1200px) {
+
+            .about-container,
+            .gallery-container,
+            .features-container,
+            .info-container,
+            .contact-container {
+                padding: 0 20px;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 4em;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+            }
+
+            .about-image {
+                order: -1;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .gallery-item.hero,
+            .gallery-item.hero1,
+            .gallery-item.large,
+            .gallery-item.wide {
+                grid-column: span 2;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            /* Footer responsive adjustments */
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 3.5em;
+                letter-spacing: 2px;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1em;
+                letter-spacing: 2px;
+            }
+
+            .hero-description {
+                font-size: 1.1em;
+            }
+
+            .about-content h2,
+            .gallery-title,
+            .features-title,
+            .contact-title {
+                font-size: 2.5em;
+            }
+
+            .info-title {
+                font-size: 2.2em;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .gallery-item.hero,
+            .gallery-item.hero1,
+            .gallery-item.large,
+            .gallery-item.wide,
+            .gallery-item.tall {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .info-stats {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .back-button {
+                top: 20px;
+                left: 20px;
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+
+            /* Footer mobile layout */
+            .footer-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 30px;
+                display: flex;
+                grid-template-columns: 1fr;
+                gap: 50px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .footer-section h3::after {
+                left: 0;
+                transform: none;
+            }
+
+            .nav-links {
+                align-items: flex-start;
+            }
+
+            .social-media-section {
+                text-align: left;
+            }
+
+            .social-media-grid {
+                justify-content: flex-start;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2.8em;
+                letter-spacing: 1px;
+            }
+
+            .hero-content {
+                padding: 0 15px;
+            }
+
+            .about-section,
+            .gallery-section,
+            .features-section,
+            .info-section,
+            .contact-section {
+                padding: 80px 0;
+            }
+
+            .about-content h2,
+            .gallery-title,
+            .features-title,
+            .contact-title {
+                font-size: 2.2em;
+            }
+
+            .info-title {
+                font-size: 2em;
+            }
+
+            .feature-item {
+                padding: 30px 15px;
+            }
+
+            .feature-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2em;
+            }
+
+            .stat-number {
+                font-size: 2.5em;
+            }
+
+            .footer {
+                padding: 40px 0 20px 0;
+            }
+
+            .footer-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 30px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 50px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .map-container {
+                height: 150px;
+            }
+
+            .social-media-grid {
+                gap: 15px;
+            }
+
+            .social-link {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.5em;
+            }
+
+            .palm-decoration {
+                font-size: 6em;
+            }
+
+            .footer-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 30px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 50px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .about-content h2,
+            .gallery-title,
+            .features-title,
+            .contact-title {
+                font-size: 2em;
+            }
+
+            .ticket-card {
+                flex: 1 1 100%;
+            }
+
+            .footer-section h3 {
+                font-size: 18px;
+            }
+        }
+
+        /* Animation improvements */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer-section {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .footer-section:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .footer-section:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .footer-section:nth-child(3) {
+            animation-delay: 0.3s;
+        }
       </style>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1235,7 +1526,7 @@
       <section class="location-section">
           <div class="contact-container">
               <h2 class="contact-title">📍 Lokasi & Akses</h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.8877299498427!2d105.5837375747771!3d-5.729307156622479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4111794bbf01d5%3A0xfea50084aa4be2ba!2sPantai%20Benteng%20Wayurang!5e0!3m2!1sen!2sid!4v1754494789211!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.8877299498427!2d105.5837375747771!3d-5.729307156622479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4111794bbf01d5%3A0xfea50084aa4be2ba!2sPantai%20Benteng%20Wayurang!5e0!3m2!1sen!2sid!4v1754494789211!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
       </section>
 
